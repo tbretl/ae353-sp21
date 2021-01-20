@@ -35,3 +35,57 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### Math Examples
+
+Here is an example of inline math, we know $a + b = c$ is true.
+
+Here is an example of display math:
+$$a + b = c$$
+
+Here is another example of display math:
+\\[a + b = c\\]
+
+Here is yet another example of display math:
+\begin{equation}
+a + b = c
+\end{equation}
+
+Here is even yet another example of display math:
+\begin{align}
+a + b = c \\\\
+d + e = f
+\end{align}
+
+$$
+\begin{align}
+a + b = c \\\\
+d + e = f
+\end{align}
+$$
+
+$$
+\begin{align}
+a + b &= c \\
+d + e &= f \\
+g + h &= i + j
+\end{align}
+$$
+
+Escape example: \$
+
+Here is still yet another example of display math, which does not work:
+\begin{align*}
+a + b = c
+\end{align*}
+
+What about code blocks with latex?
+```
+$$
+\begin{align}
+a + b &= c \\
+d + e &= f \\
+g + h &= i + j
+\end{align}
+$$
+```
