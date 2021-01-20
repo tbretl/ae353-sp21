@@ -1,9 +1,12 @@
 ---
 layout: default
-title: simple site
-tagline: Easy websites with GitHub Pages
-description: Minimal tutorial on making a simple website with GitHub Pages
+title: AE 353 (Spring 2021)
+tagline: An invitation to aerospace control
+description: This is the course website for Aerospace Control Systems.
 ---
+
+* A markdown unordered list which will be replaced with the ToC, excluding the "Contents header" from above
+{:toc}
 
 ## AE 353 (Spring 2021)
 
