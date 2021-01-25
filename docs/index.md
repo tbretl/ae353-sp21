@@ -5,10 +5,6 @@ tagline: An invitation to aerospace control
 description: This is the course website for Aerospace Control Systems
 ---
 
-{:no-toc}
-## Contents
-{:toc}
-
 ## Instructor
 
 Prof. Timothy Bretl
@@ -55,6 +51,23 @@ The following book is available online for free, as a reference:
 
 There is no required textbook.
 
-## Other polices...
+## Grading
 
-TBA
+You will be asked to do four things in this class:
+* Respond to a short survey either during or within 24 hours of each lecture
+* Participate in our discussion form (i.e., ask and answer questions)
+* Complete a set of low-stakes, auto-graded homework problems
+* Complete four control design projects and collect the results (paper, code, video) in a portfolio
+
+You are guaranteed a B if you do all of the following things:
+* Submit a response to 90% of the surveys
+* Accumulate at least 400 reputation points on Campuswire
+* Submit correct answers to at least 90% of the homework problems
+* Submit all four control design projects (1) on time - no more than 5 total days late, (2) with a substantive difference between initial drafts and the final version, and (3) with evidence of having found and explored something that interests you
+
+During the semester, you will receive only three possible grades on your control design projects:
+* Not satisfactory for B
+* Satisfactory for B
+* Better than B
+
+We will not distinguish between grades higher than B until we look at your entire portfolio at the end of the semester.
