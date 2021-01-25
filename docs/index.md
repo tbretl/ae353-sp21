@@ -10,6 +10,7 @@ description: This is the course website for Aerospace Control Systems
 Prof. Timothy Bretl
 * Email: <tbretl@illinois.edu>
 * Phone: 217-244-3126
+* [Website](https://bretl.csl.illinois.edu)
 * Physical Office: 321A Talbot Laboratory or 158 Coordinated Science Laboratory
 * Virtual Office: Zoom ([by appointment](https://calendly.com/timbretl))
 * Office Hours: TBA or ([by appointment](https://calendly.com/timbretl))
