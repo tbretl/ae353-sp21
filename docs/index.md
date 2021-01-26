@@ -47,7 +47,7 @@ Be an undergraduate student in Aerospace Engineering, with credit or concurrent 
 ## Reference Text
 
 The following book is available online for free, as a reference:
-* [Feedback Systems: An Introduction for Scientists and Engineers (Astrom and Murray)](http://www.cds.caltech.edu/~murray/amwiki/)
+* [Feedback Systems: An Introduction for Scientists and Engineers (Astrom and Murray)](https://fbswiki.org/)
 
 There is no required textbook.
 
