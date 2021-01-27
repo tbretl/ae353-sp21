@@ -74,4 +74,9 @@ We will not distinguish between grades higher than B until we look at your entir
 
 ## Schedule
 
-* Day 02 (Wednesday, January 27): fill out [this survey](https://forms.gle/t2t6UiE2CD52uY5U6) by noon on Thursday
+Day 01 (Monday, January 25)
+* [Video](https://mediaspace.illinois.edu/media/t/1_bar216yw/)
+
+Day 02 (Wednesday, January 27)
+* [Video](https://mediaspace.illinois.edu/media/t/1_ljjd2109/)
+* [In-class survey](https://forms.gle/t2t6UiE2CD52uY5U6) to fill out by noon on Thursday, January 28
