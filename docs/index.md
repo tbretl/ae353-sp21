@@ -71,3 +71,7 @@ During the semester, you will receive only three possible grades on your control
 * Better than B
 
 We will not distinguish between grades higher than B until we look at your entire portfolio at the end of the semester.
+
+## Schedule
+
+* Day 02 (Wednesday, January 27): fill out [this survey](https://forms.gle/t2t6UiE2CD52uY5U6) by noon on Thursday
