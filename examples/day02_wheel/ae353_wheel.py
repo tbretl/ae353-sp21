@@ -60,7 +60,7 @@ class RobotSimulator:
         tau = np.clip(tau_desired, -self.tau_max, self.tau_max)
         self.set_joint_torque(np.array([tau]))
         return tau
-    
+
     def reset(self):
         """
         sets both the joint angle and joint velocity to zero
@@ -84,7 +84,8 @@ class RobotSimulator:
         sets the state to the joint positions and joint velocities that are
         specified by 1D numpy arrays q and (optionally) v, respectively
         """
-        v = v or np.zeros_like(q)
+        if v is None:
+            v = np.zeros_like(q)
         for i, joint_id in enumerate(self.joint_ids):
             p.resetJointState(self.robot_id, joint_id, q[i], v[i])
 
