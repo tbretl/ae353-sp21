@@ -83,4 +83,5 @@ Day 02 (Wednesday, January 27)
 * [Example code (reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day02_wheel)
 
 Day 03 (Friday, January 29)
+* [Video](https://mediaspace.illinois.edu/media/t/1_5v9lh7ex/)
 * [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScgviwethSHLY-vwlXShup-ZOQdwHvkS6Ja3LE1zNqCec0tUQ/viewform?usp=sf_link) to fill out by noon on Saturday, January 29
