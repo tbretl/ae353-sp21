@@ -13,3 +13,15 @@ $body-link-color: #009FD4 !default;
 $blockquote-text-color: #4D69A0 !default;
 
 @import "{{ site.theme }}";
+
+.btn {
+    color: #13294B;
+    border-color: #13294B;
+    background-color: #F8FAFC;
+}
+
+.btn:hover {
+    color: #F8FAFC;
+    border-color: #13294B;
+    background-color: #13294B;
+}
