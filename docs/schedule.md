@@ -35,4 +35,5 @@ description: What we will do from day to day
 
 ### Day 04 (Monday, February 1)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_wbfl2u7h/)
 * [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScu_AqKqi-B9t9njAx_KBDNuj_hbOUUBAcddZ9mfz77HfaLiw/viewform?usp=sf_link) to fill out by noon on Tuesday, February 2
