@@ -30,3 +30,9 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_5v9lh7ex/)
 * [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScgviwethSHLY-vwlXShup-ZOQdwHvkS6Ja3LE1zNqCec0tUQ/viewform?usp=sf_link) to fill out by noon on Saturday, January 29
 * [Example code (platform with reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day03_platform)
+
+## Week 2
+
+### Day 04 (Monday, February 1)
+
+* [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScu_AqKqi-B9t9njAx_KBDNuj_hbOUUBAcddZ9mfz77HfaLiw/viewform?usp=sf_link) to fill out by noon on Tuesday, February 2
