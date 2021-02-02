@@ -124,7 +124,7 @@ pybullet build time: Jan 22 2021 10:46:31
 
 ### Jupyter notebooks
 
-Notebooks are a convenient way to play around, to debub code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)). In a terminal, do this:
+Notebooks are a convenient way to play around, to debug code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)). In a terminal, do this:
 ```
 python -m ipykernel install --user --name ae353-bullet --display-name "Python (ae353-bullet)"
 ```
