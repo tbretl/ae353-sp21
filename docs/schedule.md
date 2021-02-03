@@ -40,4 +40,5 @@ description: What we will do from day to day
 
 ### Day 05 (Wednesday, February 3)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_b2knpkxr/)
 * [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLSfnKNAvL2pvqKMWytEFgwcV1wjtv1hM8tGaFIEgftFFk2wUjQ/viewform?usp=sf_link) to fill out by noon on Thursday, February 4
