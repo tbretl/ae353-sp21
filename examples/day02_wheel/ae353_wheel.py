@@ -4,7 +4,7 @@ import time
 import os.path
 
 class RobotSimulator:
-    def __init__(self):
+    def __init__(self, damping=0.):
         # Choose the time step
         self.dt = 0.01
 
@@ -22,18 +22,25 @@ class RobotSimulator:
         # Load plane
         p.loadURDF('./urdf/plane.urdf')
 
-        # Load robot (with mass and inertia coming from the URDF rather than being recomputed by pybullet)
+        # Load robot (with mass and inertia coming from the URDF rather than
+        # being recomputed by pybullet)
         self.robot_id = p.loadURDF('./urdf/wheel.urdf',
-                                   flags=(p.URDF_USE_IMPLICIT_CYLINDER | p.URDF_USE_INERTIA_FROM_FILE))
+                                   flags=(p.URDF_USE_IMPLICIT_CYLINDER  |
+                                          p.URDF_USE_INERTIA_FROM_FILE  ))
+
+        # Eliminate linear and angular damping (i.e., a poor model of drag that
+        # is applied by default to every link)
+        for joint_id in range(p.getNumJoints(self.robot_id)):
+            p.changeDynamics(self.robot_id, joint_id, linearDamping=0., angularDamping=0.)
 
         # Specify maximum applied torque
         self.tau_max = 5.
 
         # Create a dictionary that maps joint names to joint indices
         self.joint_map = {}
-        for joint_index in range(p.getNumJoints(self.robot_id)):
-            joint_name = p.getJointInfo(self.robot_id, joint_index)[1].decode('UTF-8')
-            self.joint_map[joint_name] = joint_index
+        for joint_id in range(p.getNumJoints(self.robot_id)):
+            joint_name = p.getJointInfo(self.robot_id, joint_id)[1].decode('UTF-8')
+            self.joint_map[joint_name] = joint_id
 
         # Create a 1D numpy array with the index (according to bullet) of each joint we care about
         self.joint_names = [
@@ -41,6 +48,10 @@ class RobotSimulator:
         ]
         self.num_joints = len(self.joint_names)
         self.joint_ids = np.array([self.joint_map[joint_name] for joint_name in self.joint_names])
+
+        # Set damping of these joints (i.e., coefficient of viscous friction) to given value
+        for id in self.joint_ids:
+            p.changeDynamics(self.robot_id, id, jointDamping=damping)
 
         # Disable velocity control on joints so we can use torque control
         p.setJointMotorControlArray(self.robot_id, self.joint_ids,
