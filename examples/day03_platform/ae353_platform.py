@@ -4,7 +4,7 @@ import time
 import os.path
 
 class RobotSimulator:
-    def __init__(self):
+    def __init__(self, damping=0., pitch=0.):
         # Choose the time step
         self.dt = 0.01
 
@@ -20,11 +20,20 @@ class RobotSimulator:
         p.configureDebugVisualizer(p.COV_ENABLE_GUI, 0)
 
         # Load plane
-        p.loadURDF('./urdf/plane.urdf')
+        p.loadURDF('./urdf/plane.urdf',
+                   baseOrientation=p.getQuaternionFromEuler([0., pitch, 0.]))
 
-        # Load robot (with mass and inertia coming from the URDF rather than being recomputed by pybullet)
+        # Load robot (with mass and inertia coming from the URDF rather than
+        # being recomputed by pybullet)
         self.robot_id = p.loadURDF('./urdf/platform.urdf',
-                                   flags=(p.URDF_USE_IMPLICIT_CYLINDER | p.URDF_USE_INERTIA_FROM_FILE))
+                                   baseOrientation=p.getQuaternionFromEuler([0., pitch, 0.]),
+                                   flags=(p.URDF_USE_IMPLICIT_CYLINDER  |
+                                          p.URDF_USE_INERTIA_FROM_FILE  ))
+
+        # Eliminate linear and angular damping (i.e., a poor model of drag that
+        # is applied by default to every link)
+        for joint_id in range(p.getNumJoints(self.robot_id)):
+            p.changeDynamics(self.robot_id, joint_id, linearDamping=0., angularDamping=0.)
 
         # Specify maximum applied torque
         self.tau_max = 5.
@@ -42,6 +51,10 @@ class RobotSimulator:
         ]
         self.num_joints = len(self.joint_names)
         self.joint_ids = np.array([self.joint_map[joint_name] for joint_name in self.joint_names])
+
+        # Set damping of joints (i.e., coefficient of viscous friction)
+        for id in self.joint_ids:
+            p.changeDynamics(self.robot_id, id, jointDamping=damping)
 
         # Disable velocity control on joints so we can use torque control
         p.setJointMotorControlArray(self.robot_id, self.joint_ids,
