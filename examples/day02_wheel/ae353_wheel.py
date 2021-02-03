@@ -1,7 +1,7 @@
 import numpy as np
 import pybullet as p
 import time
-import os.path
+import os
 
 class RobotSimulator:
     def __init__(self, damping=0.):
@@ -20,11 +20,11 @@ class RobotSimulator:
         p.configureDebugVisualizer(p.COV_ENABLE_GUI, 0)
 
         # Load plane
-        p.loadURDF('./urdf/plane.urdf')
+        p.loadURDF(os.path.join('.', 'urdf', 'plane.urdf'))
 
         # Load robot (with mass and inertia coming from the URDF rather than
         # being recomputed by pybullet)
-        self.robot_id = p.loadURDF('./urdf/wheel.urdf',
+        self.robot_id = p.loadURDF(os.path.join('.', 'urdf', 'wheel.urdf'),
                                    flags=(p.URDF_USE_IMPLICIT_CYLINDER  |
                                           p.URDF_USE_INERTIA_FROM_FILE  ))
 
