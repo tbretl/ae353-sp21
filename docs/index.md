@@ -27,10 +27,10 @@ Prof. Timothy Bretl
 
 Mr. Jacob Kraft
 * Email: <jacobgk2@illinois.edu>
-* Phone: TBA
+* Phone: 440-409-1499
 * Physical Office: TBA
-* Virtual Office: Zoom (by appointment)
-* Office Hours: Tuesdays and Thursdays from 2:00pm-3:00pm CST
+* Virtual Office: Zoom ([by appointment](https://calendly.com/jacobgk2))
+* Office Hours: Tuesdays and Thursdays from 2:00pm-3:00pm CST or ([by appointment](https://calendly.com/jacobgk2))
 
 ## Time and Place
 
