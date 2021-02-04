@@ -19,8 +19,6 @@ Prof. Timothy Bretl
 * Email: <tbretl@illinois.edu>
 * Phone: 217-244-3126
 * [Website](https://bretl.csl.illinois.edu)
-* Physical Office: 321A Talbot Laboratory or 158 Coordinated Science Laboratory
-* Virtual Office: Zoom ([by appointment](https://calendly.com/timbretl))
 * Office Hours:
     * Thursdays 1-2PM by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
     * [By appointment](https://calendly.com/timbretl))
