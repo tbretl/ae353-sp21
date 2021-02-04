@@ -29,7 +29,8 @@ Mr. Jacob Kraft
 * Email: <jacobgk2@illinois.edu>
 * Phone: 440-409-1499
 * Office Hours:
-    * Tuesdays and Thursdays, 2:00pm-3:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
+    * Tuesdays, 2:00pm-3:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
+    * Thursdays, 2:00pm-3:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
     * [By appointment on Zoom](https://calendly.com/jacobgk2)
 
 ## Time and Place
