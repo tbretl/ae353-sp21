@@ -21,7 +21,7 @@ Prof. Timothy Bretl
 * [Website](https://bretl.csl.illinois.edu)
 * Office Hours:
     * Thursdays 1-2PM by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
-    * [By appointment](https://calendly.com/timbretl))
+    * [By appointment](https://calendly.com/timbretl)
 
 ## Teaching Assistant
 
