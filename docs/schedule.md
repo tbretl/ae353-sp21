@@ -22,13 +22,13 @@ description: What we will do from day to day
 ### Day 02 (Wednesday, January 27)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_ljjd2109/)
-* [In-class survey](https://forms.gle/t2t6UiE2CD52uY5U6) to fill out by noon on Thursday, January 28
+* [Survey](https://forms.gle/t2t6UiE2CD52uY5U6) to fill out by noon on Thursday, January 28
 * [Example code (reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day02_wheel)
 
 ### Day 03 (Friday, January 29)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_5v9lh7ex/)
-* [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScgviwethSHLY-vwlXShup-ZOQdwHvkS6Ja3LE1zNqCec0tUQ/viewform?usp=sf_link) to fill out by noon on Saturday, January 29
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScgviwethSHLY-vwlXShup-ZOQdwHvkS6Ja3LE1zNqCec0tUQ/viewform?usp=sf_link) to fill out by noon on Saturday, January 29
 * [Example code (platform with reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day03_platform)
 
 ## Week 2
@@ -36,9 +36,14 @@ description: What we will do from day to day
 ### Day 04 (Monday, February 1)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_wbfl2u7h/)
-* [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLScu_AqKqi-B9t9njAx_KBDNuj_hbOUUBAcddZ9mfz77HfaLiw/viewform?usp=sf_link) to fill out by noon on Tuesday, February 2
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScu_AqKqi-B9t9njAx_KBDNuj_hbOUUBAcddZ9mfz77HfaLiw/viewform?usp=sf_link) to fill out by noon on Tuesday, February 2
 
 ### Day 05 (Wednesday, February 3)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_b2knpkxr/)
-* [In-class survey](https://docs.google.com/forms/d/e/1FAIpQLSfnKNAvL2pvqKMWytEFgwcV1wjtv1hM8tGaFIEgftFFk2wUjQ/viewform?usp=sf_link) to fill out by noon on Thursday, February 4
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnKNAvL2pvqKMWytEFgwcV1wjtv1hM8tGaFIEgftFFk2wUjQ/viewform?usp=sf_link) to fill out by noon on Thursday, February 4
+
+### Day 06 (Friday, February 5)
+
+* No synchronous lecture - see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/52)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHxO8YWlPuwH61EjfuTDMUdQUOB4Ld9PlebFc5shD7q-IDIg/viewform?usp=sf_link) to fill out by noon on Saturday, February 6
