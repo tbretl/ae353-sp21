@@ -52,5 +52,6 @@ description: What we will do from day to day
 
 ### Day 07 (Monday, February 8)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_fidduyv4/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSewGF7LWstbUOCkd67Q-9WRWv42mIKPagolWSe8_YgukKTr1g/viewform?usp=sf_link) to fill out by noon on Tuesday, February 9
 * [PrairieLearn HW1](https://www.prairielearn.org/pl/course_instance/128571/assessments)
