@@ -47,3 +47,10 @@ description: What we will do from day to day
 
 * No synchronous lecture - see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/52)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHxO8YWlPuwH61EjfuTDMUdQUOB4Ld9PlebFc5shD7q-IDIg/viewform?usp=sf_link) to fill out by noon on Saturday, February 6
+
+## Week 3
+
+### Day 07 (Monday, February 8)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSewGF7LWstbUOCkd67Q-9WRWv42mIKPagolWSe8_YgukKTr1g/viewform?usp=sf_link) to fill out by noon on Tuesday, February 9
+* [PrairieLearn HW1](https://www.prairielearn.org/pl/course_instance/128571/assessments)
