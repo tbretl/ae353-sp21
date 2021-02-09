@@ -86,3 +86,18 @@ It took several hours to figure this all out. There were three causes of delay:
 * I did not understand the `baseurl` concept (see above).
 
 If I did this all again, it would take no more than ten minutes.
+
+
+## How to create an Illinois Media Space channel that accepts student submissions
+
+Create a channel on [Illinois Media Space](https://mediaspace.illinois.edu) in [the usual way](https://mediaspace.illinois.edu/help#tut-createchannel) (also see [video tutorial](https://mediaspace.illinois.edu/media/t/1_l8xu6p9n/33192941)).
+
+You will probably want to keep this channel private so that only enrolled students can view and contribute content. This is done by ["Rostering a MediaSpace Channel with Students Enrolled in a Course"](https://publish.illinois.edu/id-training/rostering-a-mediaspace-channel-with-students-enrolled-in-a-course/). In particular, follow these steps:
+
+* Add a tag like `AE 353 A 2021 Spring CRN29907` where both the section (`A` in this case) and the `CRN` can be found on [Course Explorer](https://courses.illinois.edu). This tag must be formatted **exactly as shown**. Do not forget to "Save" your channel after adding the tag, if you are editing.
+
+* Wait 5 minutes. A group will be created in Illinois Media Space whose members are all students enrolled in the section of your course that you specified.
+
+* Edit your channel again. Click on the "Users" tab. Click "Add Users". Click "Contributer". Type the exact same string you used for the tag, but with underscores instead of spaces. For example: `AE_353_A_2021_Spring_CRN29907`. If that group does not appear, then either (1) you haven't waited long enough, (2) you failed to save the channel when adding the tag, or (3) you had a typo in the tag name - for example, `AE 353 A 22021 Spring CRN29907` isn't going to work.
+
+At this point, all enrolled students (and nobody else) will be able to upload videos to this channel and view videos in this channel.
