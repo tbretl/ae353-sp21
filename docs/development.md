@@ -72,9 +72,9 @@ Second, I created a [Gemfile](https://bundler.io/man/gemfile.5.html#NAME) and in
 
 Third, I tested the site by following [these instructions from GitHub](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll). In particular, still inside the `docs/` folder, I called
 ```
-bundle exec jekyll serve
+bundle exec jekyll serve --baseurl '/ae353-sp21'
 ```
-and then opened `http://localhost:4000` in a browser.
+and then opened `http://localhost:4000/ae353-sp21/` in a browser. (See ["Clearing Up Confusion Around baseurl -- Again"](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) for why the `--baseurl '/ae353-sp21'` argument is necessary.)
 
 The key benefit of this setup is that any local changes I make to files (e.g., this one: `howto.md`) show up immediately in my browser on `localhost`. In contrast, if I `git push` these changes, it can take several minutes for the site to rebuild and for these changes to show up in my browser on `tbretl.github.io/ae353-sp21`.
 
@@ -83,5 +83,6 @@ It took several hours to figure this all out. There were three causes of delay:
 * I had to start over after I realized it was important to install Ruby with Homebrew. MacOS ships with Ruby, but this is installed globally, and you have the usual problem of needing to run with `sudo` when trying to subsequently install anything with bundler.
 * Instructions for site creation assumed I was starting from scratch. Apparently, most people who recognize the need for local testing create the site with that in mind from the start. So, it took me a while to understand the `bundle init` / `bundle install` process.
 * It took me forever to find the fix to `bundler: failed to load command: jekyll` (see above).
+* I did not understand the `baseurl` concept (see above).
 
 If I did this all again, it would take no more than ten minutes.
