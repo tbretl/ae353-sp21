@@ -90,7 +90,7 @@ If I did this all again, it would take no more than ten minutes.
 
 ## How to create an Illinois Media Space channel that accepts student submissions
 
-Create a channel on [Illinois Media Space](https://mediaspace.illinois.edu) in [the usual way](https://mediaspace.illinois.edu/help#tut-createchannel) (also see [video tutorial](https://mediaspace.illinois.edu/media/t/1_l8xu6p9n/33192941)).
+Create a channel on [Illinois Media Space](https://mediaspace.illinois.edu) in [the usual way](https://mediaspace.illinois.edu/help#tut-createchannel) (also see [video tutorial](https://mediaspace.illinois.edu/media/t/1_l8xu6p9n/33192941)). Set permissions to "Shared Repository".
 
 You will probably want to keep this channel private so that only enrolled students can view and contribute content. This is done by ["Rostering a MediaSpace Channel with Students Enrolled in a Course"](https://publish.illinois.edu/id-training/rostering-a-mediaspace-channel-with-students-enrolled-in-a-course/). In particular, follow these steps:
 
