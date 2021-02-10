@@ -13,6 +13,131 @@ description: This is the course website for Aerospace Control Systems
 
 ---
 
+## Design Project \#1
+
+### The system
+
+The first project that you will complete this semester is to design, implement, and test a controller that uses a single-gimbal control moment gyroscope (CMG) to reorient a platform, as pictured below:
+
+![Image of control moment gyroscope](./images/cmg.png)
+
+This system has three parts:
+
+* A *platform* (dark blue) that can rotate freely about its base. Think of this as a spacecraft that is confined to rotate about a single axis, as if it were being tested on the ground.
+* A *gimbal* (light blue) that can be driven by a motor to rotate about a perpendicular axis with respect to the platform.
+* A *rotor* (orange) that can be driven by a motor to spin about yet another perpendicular axis with respect to the gimbal.
+
+If the rotor is spun at a high rate, then an "input torque" applied to the gimbal will, through conservation of angular momentum, result in an "output torque" applied to the platform. This output torque can be used, in particular, to change the orientation of the platform.
+
+One advantage of using a single-gimbal CMG over a reaction wheel is that this output torque can be much higher than the input torque --- a so-called "torque amplification" effect. One disadvantage of using a CMG is that the resulting dynamics are more complicated and require a more sophisticated controller.
+
+You can read more about CMGs and their use for spacecraft attitude control in [Fundamentals of Spacecraft Attitude Determination and Control (Markley and Crassidis, 2014)](https://link.springer.com/book/10.1007/978-1-4939-0802-8).
+
+The motion of the system is governed by the following ordinary differential equations:
+
+$$
+\begin{aligned}
+\dot{v}_1 &= - \left( \dfrac{5 \left(200 \tau_{3} \sin{\left(q_{2} \right)} + \sin{\left(2 q_{2} \right)} v_{1} v_{2} + 2 \cos{\left(q_{2} \right)} v_{2} v_{3}\right)}{10 \sin^{2}{\left(q_{2} \right)} - 511} \right) \\[1em]
+\dot{v}_2 &= \dfrac{10 \left(100 \tau_{2} - \cos{\left(q_{2} \right)} v_{1} v_{3}\right)}{11} \\[1em]
+\dot{v}_3 &= - \left( \dfrac{51100 \tau_{3} + 5 \sin{\left(2 q_{2} \right)} v_{2} v_{3} + 511 \cos{\left(q_{2} \right)} v_{1} v_{2}}{10 \sin^{2}{\left(q_{2} \right)} - 511} \right) \end{aligned}
+$$
+
+In these equations:
+
+* $q_1$ and $v_1$ are the angle (rad) and angular velocity (rad/s) of the platform
+* $q_2$ and $v_2$ are the angle (rad) and angular velocity (rad/s) of the gimbal
+* $v_3$ is the angular velocity (rad/s) of the rotor
+* $\tau_2$ is the torque (N$\cdot$m) applied by the platform to the gimbal
+* $\tau_3$ is the torque (N$\cdot$m) applied by the gimbal to the rotor
+
+Sensors provide measurements of all angles and angular velocities. Actuators allow you to choose what torques will be applied, up to a maximum of $\pm 5\;\text{N}\cdot\text{m}$.
+
+The code provided [here]({{ site.github.repository_url }}/tree/main/projects/01_cmg) simulates the motion of this system ([CMGDemo]({{ site.github.repository_url }}/tree/main/projects/01_cmg/CMGDemo.ipynb) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/01_cmg/DeriveEOM.ipynb)).
+
+The system starts with the rotor spinning at 100 revolutions per minute and with zero platform and gimbal angles. The goal is to reorient the platform so it comes back to rest at a particular angle that you get to choose.
+
+### Your tasks
+
+First, do all of these things:
+
+* Choose a platform angle that you want to achieve.
+* Linearize the model about your chosen platform angle and express the result in state-space form.
+* Design a linear state feedback controller and verify that the closed-loop system is asymptotically stable in theory.
+* Implement this controller and plot the results as evidence to verify that the closed-loop system is asymptotically stable in simulation.
+
+Then, consider at least one of the following questions:
+
+* Is there a difference between the trajectory that is predicted by your linear model and the one that results from the nonlinear simulation?
+* How do the initial conditions affect the resulting motion?
+* How does the choice of goal angle affect the resulting motion?
+* Does your controller still work if you change the rotor speed?
+
+You are also welcome to consider a similar question that you come up with on your own.
+
+### Your deliverables (by Monday, March 1)
+
+#### Video
+
+This video will satisfy the following requirements:
+
+* It must show your working control system.
+* It must visualize your answer to one question that you considered.
+* It must include some description (e.g., as text or voice) of what is being shown.
+* It must stay professional (use good sense, please).
+
+It is best if this video is created by direct screen-capture rather than, for example, by taking a video of the screen with a cell phone.
+
+It is best if this video is about 60 seconds in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep viewers' attention with anything longer.
+
+Submit your video by uploading it to the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space. Please take care to do the following:
+
+* Use a descriptive title that includes your name in parentheses --- for example, "CMG control of a spacecraft (Tim Bretl)".
+* Add the tag `P1` (an **upper case** "P" followed by the number "1"), so viewers can filter by project number.
+
+You are welcome to resubmit your video at any time. To do so, please "Edit" your **existing** video and then do "Replace Media". Please do **not** create a whole new submission.
+
+#### Code
+
+This code will satisfy the following requirements:
+
+* It must be in a folder called `code` (all **lower case**).
+* It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
+* It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
+* It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
+
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `code_old` or anything like that.
+
+#### Report
+
+This report will satisfy the following requirements:
+
+* It must be a single PDF document that is called `report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must have a descriptive title, an author, an abstract, and a list of nomenclature.
+* It must say how you addressed all of the required tasks (see above).
+* It must **tell a story** that shows you have found and explored something that interests you.
+* It must **acknowledge and cite** any sources, including the reports of your colleagues.
+
+You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
+
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `report_old.pdf` or anything like that.
+
+### Evaluation
+
+We will look at your submissions in the order that they are received. Early submissions are strongly encouraged. We will provide written feedback but will provide only one of three possible grades:
+
+* Not satisfactory for B
+* Satisfactory for B
+* Better than B
+
+We will only distinguish between grades higher than B when we look at your entire portfolio of project work at the end of the semester.
+
+To improve your portfolio, you are welcome (but not required) to resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (May 5, 2021).
+
+
 ## Installation
 
 ### Python
@@ -90,6 +215,7 @@ channels:
 dependencies:
   - numpy
   - scipy
+  - sympy
   - matplotlib
   - pip
   - python=3
