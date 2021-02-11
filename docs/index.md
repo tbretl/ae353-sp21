@@ -20,7 +20,7 @@ Prof. Timothy Bretl
 * Phone: 217-244-3126
 * [Website](https://bretl.csl.illinois.edu)
 * Office Hours:
-    * Thursdays, 1:00pm-2:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
+    * Thursdays, 1:00pm-2:00pm CST, on Zoom (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
     * [By appointment on Zoom](https://calendly.com/timbretl)
 
 ## Teaching Assistant
@@ -29,8 +29,8 @@ Mr. Jacob Kraft
 * Email: <jacobgk2@illinois.edu>
 * Phone: 440-409-1499
 * Office Hours:
-    * Tuesdays, 2:00pm-3:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
-    * Thursdays, 2:00pm-3:00pm CST, by gather.town (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
+    * Tuesdays, 2:00pm-3:00pm CST, on Zoom (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
+    * Thursdays, 2:00pm-3:00pm CST, on Zoom (see [Campuswire](https://campuswire.com/c/GC4DB42F3/feed/50) for link)
     * [By appointment on Zoom](https://calendly.com/jacobgk2)
 
 ## Time and Place
