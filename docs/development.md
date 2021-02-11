@@ -72,9 +72,9 @@ Second, I created a [Gemfile](https://bundler.io/man/gemfile.5.html#NAME) and in
 
 Third, I tested the site by following [these instructions from GitHub](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll). In particular, still inside the `docs/` folder, I called
 ```
-bundle exec jekyll serve --baseurl '/ae353-sp21'
+bundle exec jekyll serve --baseurl '/ae353-sp21' --livereload
 ```
-and then opened `http://localhost:4000/ae353-sp21/` in a browser. (See ["Clearing Up Confusion Around baseurl -- Again"](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) for why the `--baseurl '/ae353-sp21'` argument is necessary.)
+and then opened `http://localhost:4000/ae353-sp21/` in a browser. The `--livereload` argument (see [docs on serve command options](https://jekyllrb.com/docs/configuration/options/#serve-command-options)) makes it so the browser will automatically refresh with each change made to source files. See ["Clearing Up Confusion Around baseurl -- Again"](https://byparker.com/blog/2014/clearing-up-confusion-around-baseurl/) for why the `--baseurl '/ae353-sp21'` argument is necessary.
 
 The key benefit of this setup is that any local changes I make to files (e.g., this one: `howto.md`) show up immediately in my browser on `localhost`. In contrast, if I `git push` these changes, it can take several minutes for the site to rebuild and for these changes to show up in my browser on `tbretl.github.io/ae353-sp21`.
 
