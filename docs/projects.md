@@ -2,7 +2,7 @@
 layout: default
 title: Projects
 tagline: An invitation to aerospace control
-description: This is the course website for Aerospace Control Systems
+description: How to get started on your design projects
 ---
 
 ## Contents
