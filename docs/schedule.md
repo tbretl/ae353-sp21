@@ -66,6 +66,7 @@ description: What we will do from day to day
 
 ### Day 09: Linearization (Friday, February 12)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_wvvlq9th/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScl9UvLEaf2SgkV4g6axE1dm6awWDczaNQE685PUEE_v5xggg/viewform?usp=sf_link)
 * [PrairieLearn HW3](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Reference](http://127.0.0.1:4000/ae353-sp21/reference#how-do-i-put-a-system-in-state-space-form)
