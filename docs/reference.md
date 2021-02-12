@@ -15,6 +15,8 @@ description: Supplementary notes and other reference material
 
 ## State space models
 
+### What is a state space model?
+
 A **state-space model** has this form:
 
 $$
@@ -81,7 +83,7 @@ The second part of a state space model is a set of $n_y$ purely algebraic equati
 
 $$y = Cx + Du$$
 
-The state-space model has two key properties:
+The state space model has two key properties:
 
 * it is **linear** because both $\dot{x}$ and $y$ are linear functions of $x$ and $u$
 * it is **time-invariant** because $A$, $B$, $C$, and $D$ are constant
@@ -98,3 +100,252 @@ $$
 
 This is also a "state space model," in which the state is $z$, the input is $v$, and the output is $w$.
 </div>
+
+
+### How do I put a system in state space form?
+
+Suppose we are given a description of a dynamic system and of sensor measurements or other quantities of interest.
+We would like to describe this same system with a state space model.
+
+Remember that every state space model is linear. The equations of motion that describe a dynamic system are often nonlinear. So apparently, we will have to accept that state space models can only *approximate* some of the systems we want to describe.
+
+We will use **linearization** to arrive at this approximation, in four steps.
+
+**Step 1.** Rewrite the system as a set of first-order ordinary differential equations:
+
+$$
+\begin{aligned}
+\dot{m} &= f(m,n) \\
+z &= g(m,n)
+\end{aligned}
+$$
+
+In this expression, the variables $m$, $n$, and $z$ are functions of time and can have more than one element --- in general, you should represent them as column matrices. As we said before, the functions $f(\cdot)$ and $g(\cdot)$ will often be nonlinear.
+
+**Step 2.** Find an equilibrium point $m_{e}, n_{e}$ of the system by solving this equation:
+
+$$
+0 = f(m_{e},n_{e})
+$$
+
+A solution to this equation is called an equilibrium point because if
+
+$$m = m_e \qquad n = n_e$$
+
+then
+
+$$\dot{m} = f(m_e, n_e) = 0$$
+
+and so $m$ remains constant. That is to say, if the system reaches an equilibrium point, then it stays there. This is an important property! The goal of almost every controller we design in this course will be to make a system reach an equilibrium point quickly and reliably.
+
+This equation may have no solutions, in which case no equilibrium point exists for the system. This is bad. We will ignore this situation for now.
+
+This equation also may have many solutions, in which case you have to make a choice. A good choice is whatever equilibrium point you would like your system to achieve.
+
+**Step 3.** Define the state, input, and output as follows:
+
+$$
+x = m-m_{e}
+\qquad
+u = n-n_{e}
+\qquad
+y = z-g(m_{e},n_{e})
+$$
+
+Note that $x$ measures *error* --- the *difference* between $m$ and its equilibrium value. When error is zero, the system has reached equilibrium and is doing what we want. Apparently, with this way of defining the state and the input, "control design" means choosing $u$ so that $x$ goes to zero.
+
+**Step 4.** Compute $A$, $B$, $C$, and $D$ as follows:
+
+$$
+A = \frac{\partial f}{\partial m}\biggr\rvert_{(m_{e},n_{e})}
+\qquad
+B = \frac{\partial f}{\partial n}\biggr\rvert_{(m_{e},n_{e})}
+\qquad
+C = \frac{\partial g}{\partial m}\biggr\rvert_{(m_{e},n_{e})}
+\qquad
+D = \frac{\partial g}{\partial n}\biggr\rvert_{(m_{e},n_{e})}
+$$
+
+<div class="alert alert-info">
+Recall that
+
+$$
+\frac{\partial f}{\partial m}\biggr\rvert_{(m_{e},n_{e})}
+$$
+
+is the <a href="https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant">Jacobian (i.e., matrix of partial derivatives)</a> of $f$ with respect to $m$, evaluated at the equilibrium point.
+</div>
+
+Why does this make any sense? Look again at the ODEs that describe the original system:
+
+$$\dot{m} = f(m, n)$$
+
+First, because
+
+$$x = m - m_e$$
+
+then
+
+$$\dot{x} = \dot{m} - 0 = \dot{m}$$
+
+So the *left*-hand side of the ODEs can simply be replaced with $\dot{x}$.
+
+Now, suppose we want a linear approximation to the *right*-hand side of the ODEs --- the function $f(m, n)$. One way to find such an approximation is to take a [Taylor's series expansion](https://en.wikipedia.org/wiki/Taylor_series) about $m_e, n_e$ up to first order:
+
+$$
+\begin{aligned}
+f(m, n)
+&\approx f(m_e, n_e) + \frac{\partial f}{\partial m}\biggr\rvert_{(m_{e},n_{e})} \left( m - m_e \right) + \frac{\partial f}{\partial n}\biggr\rvert_{(m_{e},n_{e})} \left( n - n_e \right) \\
+&= 0 + A x + B u \\
+&= A x + B u
+\end{aligned}
+$$
+
+There you have it: "$\dot{x} = Ax + Bu$" is a first-order (i.e., linear) approximation to "$\dot{m} = f(m, n)$".
+
+
+#### Example (first-order)
+
+Consider the system with dynamics
+
+$$\dot{\omega} + 2 \omega = \tau$$
+
+and measurement
+
+$$\gamma = \omega$$
+
+Let's apply our method to put this system in state space form.
+
+We begin by rewriting it as a set of first-order ODEs. Lucky us, the system is already described by just one first-order ODE, so all we need to do is solve for $\dot{w}$:
+
+$$
+\begin{aligned}
+\dot{\omega} &= f(\omega, \tau) = -2\omega + \tau \\
+\gamma &= g(\omega, \tau) = \omega
+\end{aligned}
+$$
+
+Next, we find an equilibrium point by solving
+
+$$0 = -2 \omega_e + \tau_e$$
+
+In this case, there are many solutions. Suppose we pick this one:
+
+$$\omega_e = 10 \qquad \tau_e = 20$$
+
+Then, we define the state, input, and output based on this choice of equilibrium point:
+
+$$x = \omega - \omega_e \qquad u = \tau - \tau_e \qquad y = \gamma - \omega_e$$
+
+Finally, we compute $A$, $B$, $C$, and $D$ by taking Jacobians (easy in this case because all the variables are scalars):
+
+$$
+\begin{aligned}
+A &= \frac{\partial \left(-2\omega + \tau\right)}{\partial \omega}\biggr\rvert_{(\omega_{e},\tau_{e})} = -2
+&&
+B = \frac{\partial \left(-2\omega + \tau\right)}{\partial \tau}\biggr\rvert_{(\omega_{e},\tau_{e})} = 1 \\[1em]
+C &= \frac{\partial \left(\omega\right)}{\partial \omega}\biggr\rvert_{(\omega_{e},\tau_{e})} = 1
+&&
+D = \frac{\partial \left(\omega\right)}{\partial \tau}\biggr\rvert_{(\omega_{e},\tau_{e})} = 0
+\end{aligned}
+$$
+
+The resulting state space model is
+
+$$
+\begin{aligned}
+\dot{x} &= Ax + Bu && = -2x + u \\
+y &= Cx + Du && = x
+\end{aligned}
+$$
+
+Note that the original system was linear, so there was no approximation here. We could probably have skipped most of these steps and written the system in state-space form by inspection. On the other hand, it is nice to know that the process of "linearization" still works even in this simple case.
+
+
+#### Example (second-order)
+
+Consider the system with dynamics
+
+$$\ddot{q} + 3 \sin q = \tau$$
+
+and measurement
+
+$$\gamma = \cos{q}$$
+
+Let's apply our method to put this system in state-space form.
+
+We begin by rewriting it as a set of first-order ODEs:
+
+* We find the time-derivative of $q$ with highest order --- in this case, $\ddot{q}$, of order 2.
+* We define *new variables* for each time-derivative of $q$ with lower order --- in this case, $\dot{q}$, the only time-derivative with order between 0 and 2. We might choose the following name for this time-derivative:
+
+$$ v = \dot{q} $$
+
+* We rewrite the original ODEs (in this case, just one) in terms of these new variables:
+
+$$\dot{v} + 3\sin q = \tau$$
+
+* We add one extra ODE for each new variable (in this case, just one extra) --- this is trivial, coming from the way we defined these new variables:
+
+$$\dot{q} = v$$
+
+* We collect the original ODEs and the extra ODEs together, if necessary solving for all of the time-derivatives (that's not necessary here):
+
+$$
+\begin{aligned}
+\dot{q} &= v \\
+\dot{v} &= -3\sin q + \tau
+\end{aligned}
+$$
+
+* Finally, we rewrite our result in the form $\dot{m} = f(m, n)$ by collecting things in column matrices as follows:
+
+$$\begin{bmatrix} \dot{q} \\ \dot{v} \end{bmatrix} = \begin{bmatrix} v \\ -3\sin q + \tau \end{bmatrix}$$
+
+Note that, as desired, these rewritten ODEs have time derivatives that are at most of first order. Also note that all of these time-derivatives are on the left-hand side of the equations --- none appear on the right-hand side.
+
+Next, we find an equilibrium point by solving
+
+$$\begin{bmatrix} 0 \\ 0 \end{bmatrix} = \begin{bmatrix} v \\ -3\sin q + \tau \end{bmatrix}$$
+
+There are many solutions. Suppose we pick this one:
+
+In this case, there are many solutions. Suppose we pick this one:
+
+$$q_e = \pi / 2 \qquad v_e = 0 \qquad \tau_e = 3$$
+
+Then, we define the state, input, and output based on this choice of equilibrium point:
+
+$$x = \begin{bmatrix} q - q_e \\ v - v_e \end{bmatrix} \qquad u = \begin{bmatrix}\tau - \tau_e\end{bmatrix} \qquad y = \begin{bmatrix}\gamma - \cos{q_e}\end{bmatrix}$$
+
+Finally, we compute $A$, $B$, $C$, and $D$ by taking Jacobians. We will show our work for $A$ in detail:
+
+$$
+\begin{aligned}
+A
+&= \frac{\partial f}{\partial \omega}\biggr\rvert_{\left(\begin{bmatrix}q_e\\v_e\end{bmatrix},\begin{bmatrix}\tau_{e}\end{bmatrix}\right)} \\
+&= \left.\begin{bmatrix} \dfrac{\partial(v)}{\partial q} & \dfrac{\partial(v)}{\partial v} \\ \dfrac{\partial(-3\sin q + \tau)}{\partial q} & \dfrac{\partial(-3\sin q + \tau)}{\partial q} \end{bmatrix}\right\rvert_{\left(\begin{bmatrix}q_e\\v_e\end{bmatrix},\begin{bmatrix}\tau_{e}\end{bmatrix}\right)} \\
+&= \left.\begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}\right\rvert_{\left(\begin{bmatrix}q_e\\v_e\end{bmatrix},\begin{bmatrix}\tau_{e}\end{bmatrix}\right)} \\
+&= \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}
+\end{aligned}
+$$
+
+We simply state our results for the other coefficient matrices:
+
+
+$$
+B = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \qquad
+C = \begin{bmatrix} 1 & 0 \end{bmatrix} \qquad
+D = \begin{bmatrix} 0 \end{bmatrix}
+$$
+
+The resulting state space model is
+
+$$
+\begin{aligned}
+\dot{x} &= Ax + Bu && = \begin{bmatrix} 0 & 1 \\ 0 & 0 \end{bmatrix}x + \begin{bmatrix} 0 \\ 1 \end{bmatrix}u \\[1em]
+y &= Cx + Du && = \begin{bmatrix} 1 & 0 \end{bmatrix}x + \begin{bmatrix} 0 \end{bmatrix}u
+\end{aligned}
+$$
+
+The original system was nonlinear and the state space model is linear, so there *must* be some approximation here! As we will see, this approximation is good near the equilibrium point but can be very bad elsewhere.
