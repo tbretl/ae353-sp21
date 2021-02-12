@@ -50,14 +50,22 @@ description: What we will do from day to day
 
 ## Week 3
 
-### Day 07 (Monday, February 8)
+### Day 07: State space models (Monday, February 8)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_fidduyv4/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSewGF7LWstbUOCkd67Q-9WRWv42mIKPagolWSe8_YgukKTr1g/viewform?usp=sf_link) to fill out by noon on Tuesday, February 9
 * [PrairieLearn HW1](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+* [Reference](http://127.0.0.1:4000/ae353-sp21/reference#what-is-a-state-space-model)
 
-### Day 08 (Wednesday, February 10)
+### Day 08: State space models for second-order systems (Wednesday, February 10)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_h7de91r8/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSf8bVFLDRjSoKjiP-6RLtzHqi34imzE2Urefbt8EWherM0zpA/viewform?usp=sf_link) to fill out by noon on Thursday, February 11
 * [PrairieLearn HW2](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+* [Reference](http://127.0.0.1:4000/ae353-sp21/reference#what-is-a-state-space-model)
+
+### Day 09: Linearization (Friday, February 12)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScl9UvLEaf2SgkV4g6axE1dm6awWDczaNQE685PUEE_v5xggg/viewform?usp=sf_link)
+* [PrairieLearn HW3](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+* [Reference](http://127.0.0.1:4000/ae353-sp21/reference#how-do-i-put-a-system-in-state-space-form)
