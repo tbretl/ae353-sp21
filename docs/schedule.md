@@ -75,6 +75,7 @@ description: What we will do from day to day
 
 ### Day 10: Matrix exponential (Monday, February 15)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_kq40wxb3/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfiDAHp38bCSl8jwwx1uE1ReFatkGBJcwp-sLRB7Ewr8yBvxw/viewform?usp=sf_link)
 * [PrairieLearn HW4](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Reference](/ae353-sp21/reference#the-matrix-exponential-function)
