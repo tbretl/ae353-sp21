@@ -79,7 +79,10 @@ description: What we will do from day to day
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfiDAHp38bCSl8jwwx1uE1ReFatkGBJcwp-sLRB7Ewr8yBvxw/viewform?usp=sf_link)
 * [PrairieLearn HW4](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Reference](/ae353-sp21/reference#the-matrix-exponential-function)
+* Day 10 Survey Results:
+![Image of Day 10 Survey Results](./images/SurveyResults_Day10.png)
 
 ### Day 11: Asymptotic stability (Friday, February 19)
 
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSef5evvQ8QejLNKjhudoJOHBzhq1OKBrcf4c03pv3BT2DXeZQ/viewform?usp=sf_link)
 * [PrairieLearn HW5](https://www.prairielearn.org/pl/course_instance/128571/assessments)
