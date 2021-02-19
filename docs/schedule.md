@@ -86,9 +86,14 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 11: Asymptotic stability (Friday, February 19)
+### Day 11: Stability - theory (Friday, February 19)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_nmlr32b7/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSef5evvQ8QejLNKjhudoJOHBzhq1OKBrcf4c03pv3BT2DXeZQ/viewform?usp=sf_link)
 * [PrairieLearn HW5](https://www.prairielearn.org/pl/course_instance/128571/assessments)
-* [Notes](./notes/day11-stability.pdf)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day11_platform)
+* [Notes (Before Class)](./notes/Day11-Stability.pdf)
+* [Notes (After Class)](./notes/Day11-Stability-InClass.pdf)
+
+### Day 12: Stability - practice (Monday, February 22)
+
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day12_platform)
