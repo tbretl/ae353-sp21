@@ -76,11 +76,15 @@ description: What we will do from day to day
 ### Day 10: Matrix exponential (Monday, February 15)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_kq40wxb3/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfiDAHp38bCSl8jwwx1uE1ReFatkGBJcwp-sLRB7Ewr8yBvxw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfiDAHp38bCSl8jwwx1uE1ReFatkGBJcwp-sLRB7Ewr8yBvxw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day10-survey-results" aria-expanded="false" aria-controls="day10-survey-results">Results</a>)
 * [PrairieLearn HW4](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Reference](/ae353-sp21/reference#the-matrix-exponential-function)
-* Day 10 Survey Results:
-![Image of Day 10 Survey Results](./images/SurveyResults_Day10.png)
+
+<div class="collapse" id="day10-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQytsHGOojdiRyOQZ0feAofNh6iNnZ4ur-9W9yqoInBAYIUQpy1L8LhWp6cFthM4LisPLlPHwObfVUg/pubchart?oid=1975077170&amp;format=interactive"></iframe>
+  </div>
+</div>
 
 ### Day 11: Asymptotic stability (Friday, February 19)
 
