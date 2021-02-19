@@ -428,3 +428,57 @@ $$
 $$
 
 and so --- just like before --- we are right back at a linear system that can be solved with the matrix exponential. Although this result will get us a long way, we will see how to solve state space models for other choices of input later on.
+
+# Asymptotic stability
+
+## What are eigenvalues and eigenvectors?
+
+Consider a square matrix $F \in \mathbb{R}^{n \times n}$. If we can find a complex number $s \in \mathbb{C}$ and a non-zero, complex-valued vector $v \in \mathbb{C}^n$ that satisfy
+
+$$ (s I - F) v = 0 $$
+
+then we call $s$ an **eigenvalue** of $F$ and $v$ the corresponding **eigenvector** of $F$. If we wanted, we could rearrange this equation to put it in a form that might be more familiar:
+
+$$ 0 = (s I - F) v = s v - F v \qquad\Rightarrow\qquad F v = s v. $$
+
+One way to find eigenvalues is to solve the equation
+
+$$ \det (s I - F) = 0 $$
+
+where "$\det(\cdot)$" means taking a determinant. In general, this equation will be an $n$th-order polynomial in $s$, and so will have $n$ solutions --- we might call them $s_1, \dotsc, s_n$. To find an eigenvector that corresponds to each eigenvalue $s_i$, we solve
+
+$$ F v_i = s_i v_i $$
+
+for $v_i$. Note that there are many possible solutions to this equation and that eigenvectors are only unique up to a scale factor. In particular, for any real number $k \in \mathbb{R}$, we have
+
+$$ \begin{aligned} F (k v_i) &= k (F v_i) \\ &= k (s v_i) \\ &= s (k v_i). \end{aligned}$$
+
+Apparently, if $v_i$ is an eigenvector corresponding to $s_i$, then so is $k v_i$ for any $k \neq 0$. For this reason, algorithms to find eigenvectors typically *normalize* them to have unit length.
+
+## How do I diagonalize a square matrix?
+
+Suppose we have found the eigenvalues $s_1, \dotsc, s_n$ and eigenvectors $v_1, \dotsc, v_n$ of a square matrix $F\in\mathbb{R}^{n \times n}$. Define the matrix
+
+$$V = \begin{bmatrix} v_1 & \dotsm & v_n \end{bmatrix}$$
+
+with an eigenvector in each column, and also the matrix
+
+$$\text{diag} (s_1, \dotsc, s_n) = \begin{bmatrix} s_1 & 0 & \dotsm & 0 \\ 0 & s_2 & \dotsm & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \dotsm & s_n \end{bmatrix}$$
+
+with the eigenvalues along the diagonal.
+
+Two things are true.
+
+First, the following equality holds:
+
+$$F V = V \text{diag} (s_1, \dotsc, s_n) $$
+
+You could easily verify this result for yourself.
+
+Second, if $s_1, \dotsc, s_n$ are all *distinct* (i.e., if no two eigenvalues are the same), then the matrix $V$ is *invertible*. This result is harder to verify --- it has to do with the fact that if the eigenvalues are distinct then the eigenvectors are linearly independent.
+
+The key consequence of $V$ being invertible is that we can solve the above equality to write:
+
+$$\text{diag} (s_1, \dotsc, s_n) = V^{-1} F V.$$
+
+In this case --- if all eigenvalues are distinct and so the matrix of eigenvectors is invertible --- we say that $F$ is **diagonalizable**. The process of "diagonalizing $F$" is finding the matrix $V$.
