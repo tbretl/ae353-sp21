@@ -90,3 +90,5 @@ description: What we will do from day to day
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSef5evvQ8QejLNKjhudoJOHBzhq1OKBrcf4c03pv3BT2DXeZQ/viewform?usp=sf_link)
 * [PrairieLearn HW5](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+* [Notes](./notes/day11-stability.pdf)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day11_platform)
