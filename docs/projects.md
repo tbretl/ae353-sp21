@@ -100,20 +100,40 @@ You are welcome to resubmit your video at any time. To do so, please "Edit" your
 
 This code will satisfy the following requirements:
 
-* It must be in a folder called `code` (all **lower case**).
+* It must be in a folder called `01_code` (all numbers and **lower case**).
 * It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
 * It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
 * It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
 
-Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `code_old` or anything like that.
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your first design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   │   GenerateResults.ipynb
+│   │   ae353-cmg.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   cmg.urdf
+│       │   cmg_inner.stl
+│       │   cmg_outer.stl
+│       │   cmg_wheel.stl
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+|       ...
+```
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `01_code_old` or anything like that.
 
 #### Report
 
 This report will satisfy the following requirements:
 
-* It must be a single PDF document that is called `report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must be a single PDF document that is called `01_report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
 * It must have a descriptive title, an author, an abstract, and a list of nomenclature.
 * It must say how you addressed all of the required tasks (see above).
 * It must **tell a story** that shows you have found and explored something that interests you.
@@ -121,9 +141,31 @@ This report will satisfy the following requirements:
 
 You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
 
-Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+It is best if this report is about 5 pages in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep readers' attention with anything longer.
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `report_old.pdf` or anything like that.
+Submit your report by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your first design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   │   GenerateResults.ipynb
+│   │   ae353-cmg.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   cmg.urdf
+│       │   cmg_inner.stl
+│       │   cmg_outer.stl
+│       │   cmg_wheel.stl
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+|       ...
+```
+
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `01_report_old.pdf` or anything like that.
 
 ### Evaluation
 
