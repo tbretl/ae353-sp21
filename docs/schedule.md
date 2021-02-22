@@ -89,11 +89,18 @@ description: What we will do from day to day
 ### Day 11: Stability - theory (Friday, February 19)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_nmlr32b7/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSef5evvQ8QejLNKjhudoJOHBzhq1OKBrcf4c03pv3BT2DXeZQ/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSef5evvQ8QejLNKjhudoJOHBzhq1OKBrcf4c03pv3BT2DXeZQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day11-survey-results" aria-expanded="false" aria-controls="day11-survey-results">Results</a>)
 * [PrairieLearn HW5](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Notes (Before Class)](./notes/Day11-Stability.pdf)
 * [Notes (After Class)](./notes/Day11-Stability-InClass.pdf)
 
+<div class="collapse" id="day11-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSBTE53S_476duhNxZ4CaxMvftrYTWnO-CuyYujWw61-OTfuJSbGtmIZJ9G7SSXBe-5kHCRVDDnWGl4/pubchart?oid=1632284622&amp;format=interactive"></iframe>
+  </div>
+</div>
+
 ### Day 12: Stability - practice (Monday, February 22)
 
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day12_platform)
