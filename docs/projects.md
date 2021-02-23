@@ -100,20 +100,40 @@ You are welcome to resubmit your video at any time. To do so, please "Edit" your
 
 This code will satisfy the following requirements:
 
-* It must be in a folder called `code` (all **lower case**).
+* It must be in a folder called `01_code` (all numbers and **lower case**).
 * It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
 * It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
 * It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
 
-Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `code_old` or anything like that.
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your first design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   │   GenerateResults.ipynb
+│   │   ae353-cmg.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   cmg.urdf
+│       │   cmg_inner.stl
+│       │   cmg_outer.stl
+│       │   cmg_wheel.stl
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+|       ...
+```
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `01_code_old` or anything like that.
 
 #### Report
 
 This report will satisfy the following requirements:
 
-* It must be a single PDF document that is called `report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must be a single PDF document that is called `01_report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
 * It must have a descriptive title, an author, an abstract, and a list of nomenclature.
 * It must say how you addressed all of the required tasks (see above).
 * It must **tell a story** that shows you have found and explored something that interests you.
@@ -121,9 +141,31 @@ This report will satisfy the following requirements:
 
 You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
 
-Submit your code by uploading it to Box in the [AE353 (Spring 2021) Projects](https://uofi.box.com/s/xjl3tn2qzrcs5dcmeumb53jmxoodpyfg) folder. (More details TBA.)
+It is best if this report is about 5 pages in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep readers' attention with anything longer.
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `report_old.pdf` or anything like that.
+Submit your report by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your first design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   │   GenerateResults.ipynb
+│   │   ae353-cmg.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   cmg.urdf
+│       │   cmg_inner.stl
+│       │   cmg_outer.stl
+│       │   cmg_wheel.stl
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+|       ...
+```
+
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `01_report_old.pdf` or anything like that.
 
 ### Evaluation
 
@@ -136,6 +178,44 @@ We will look at your submissions in the order that they are received. Early subm
 We will only distinguish between grades higher than B when we look at your entire portfolio of project work at the end of the semester.
 
 To improve your portfolio, you are welcome (but not required) to resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (May 5, 2021).
+
+### Frequently asked questions
+
+#### Must I submit drafts prior to the March 1 deadline?
+
+No. You are welcome to submit the final version of your project early, though! You are also welcome to revise and resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (see [Evaluation](#evaluation)).
+
+#### May I watch videos that are submitted by other students?
+
+Yes. All videos will be available in the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space as soon as they are submitted by your colleagues (see the [Video](#video) deliverable). You may watch these videos whenever you want, even before you submit your own.
+
+If you are inspired by a video, or if watching a video strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** this video in your report (and in your own video, if appropriate). Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I read code and reports that are submitted by other students?
+
+Yes. Although you are only an "Editor" of your own sub-folder (see the [Report](#report) deliverable), you are a "Previewer" of all other sub-folders on Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder. You may look at the code and read the reports of any other student whenever you want, even before you submit your own.
+
+If you are inspired by the report **or the code** of another student, or if looking at this material strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** these sources in your own report. Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I work together with other students?
+
+You must submit your own video, code, and report. You must have created them yourself and must **acknowledge and cite** any sources that strongly influenced you, including the materials submitted by your colleagues.
+
+You are encouraged to discuss the project with your colleagues and, in any case, are always able to watch the videos, look at the code, and read the reports that are submitted by other students (see the questions about [watching videos](#may-i-watch-videos-that-are-submitted-by-other-students) and [reading code or reports](#may-i-read-code-and-reports-that-are-submitted-by-other-students)).
+
+#### How do I get started?
+
+The first thing you should do is [download the code]({{ site.github.repository_url }}), verify that you can run the simulation, and mess around a little bit with different actuator commands (e.g., constant torques applied to the gimbal and the rotor) to get a sense for how the system responds. You might want to try a PD controller, as we did in the first couple weeks of class, even before you start doing any analysis.
+
+After that, if you have read the entire [project description](#design-project-1) and are not sure how to proceed, then take your best guess and ask a question on [Campuswire](https://campuswire.com/c/GC4DB42F3). Improving your ability to get unstuck by asking a good question is an explicit goal of this course.
+
+#### What is "the model" that I should linearize?
+
+As we saw in [Week 3](schedule#week-3), the standard way to produce a state space model is to linearize a set of ODEs that describe the equations of motion. You will find ODEs that describe the equations of motion for the CMG system in [the system](#the-system) section above. If you are interested, the [derivation of these ODEs]({{ site.github.repository_url }}/blob/main/projects/01_cmg/DeriveEOM.ipynb) has also been provided for you. I would start with these ODEs.
+
+You will quickly realize that it may be a good idea to restrict your attention only to the platform and the gimbal, treating the rotor as a source of torque (similar to how we handled the platform example in class on [Day 09](schedule#day-09-linearization-friday-february-12)). In particular, for the purpose of control design and analysis, you may want to assume that the angular velocity of the rotor is constant and to completely ignore the second-order ODE that describes how this rotor responds to applied torque.
+
+It is entirely up to you how to proceed, though. There is no one right answer.
 
 
 
