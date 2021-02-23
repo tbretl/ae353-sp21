@@ -100,6 +100,8 @@ description: What we will do from day to day
   </div>
 </div>
 
+## Week 5
+
 ### Day 12: Stability - practice (Monday, February 22)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_90ghqyz9/)
