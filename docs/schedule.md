@@ -117,6 +117,7 @@ description: What we will do from day to day
 
 ### Day 13: Project - working together (Wednesday, Febraury 24)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_8ilzpcnc/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link)
 * Some old reports for in-class discussion:
   - <a role="button" data-bs-toggle="collapse" href="#report01" aria-expanded="false" aria-controls="report01">Report 01</a>
