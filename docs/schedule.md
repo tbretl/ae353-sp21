@@ -105,6 +105,50 @@ description: What we will do from day to day
 ### Day 12: Stability - practice (Monday, February 22)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_90ghqyz9/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day12-survey-results" aria-expanded="false" aria-controls="day12-survey-results">Results</a>)
 * [PrairieLearn HW6](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day12_platform) - there are two notebooks here, one [before class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo.ipynb) and one [after class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo-InClass.ipynb)
+
+<div class="collapse" id="day12-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_XRO80dwhdhPl8-u7aV8f66csIV6O5A-iapgvPAOZNh3XMBnt637WC92TLyopxSsnBx6SXYwYccRh/pubchart?oid=846249499&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 13: Project - getting started (Wednesday, Febraury 24)
+
+* [Video](https://mediaspace.illinois.edu/media/t/1_8ilzpcnc/)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb)
+* Some old reports for in-class discussion:
+  - <a role="button" data-bs-toggle="collapse" href="#report01" aria-expanded="false" aria-controls="report01">Report 01</a>
+  - <a role="button" data-bs-toggle="collapse" href="#report02" aria-expanded="false" aria-controls="report02">Report 02</a>
+  - <a role="button" data-bs-toggle="collapse" href="#report03" aria-expanded="false" aria-controls="report03">Report 03</a>
+* Some old code for in-class discussion:
+  - <a role="button" data-bs-toggle="collapse" href="#code01" aria-expanded="false" aria-controls="code01">Code 01</a>
+  - <a role="button" data-bs-toggle="collapse" href="#code02" aria-expanded="false" aria-controls="code02">Code 02</a>
+  - <a role="button" data-bs-toggle="collapse" href="#code03" aria-expanded="false" aria-controls="code03">Code 03</a>
+
+{: .collapse #report01 .card .card-body}
+**REPORT 01**
+![Report 01](images/report01.png)
+
+{: .collapse #report02 .card .card-body}
+**REPORT 02**
+![Report 02](images/report02.png)
+
+{: .collapse #report03 .card .card-body}
+**REPORT 03**
+![Report 03](images/report03.png)
+
+{: .collapse #code01 .card .card-body}
+**CODE 01**
+![Code 01](images/code01.png)
+
+{: .collapse #code02 .card .card-body}
+**CODE 02**
+![Code 02](images/code02.png)
+
+{: .collapse #code03 .card .card-body}
+**CODE 03**
+![Code 03](images/code03.png)

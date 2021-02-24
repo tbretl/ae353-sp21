@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<robot name="platform">
+
+  <material name="industrial-blue">
+    <color rgba="0.11372549019607843 0.34509803921568627 0.6549019607843137 1" />
+  </material>
+
+  <material name="arches-blue">
+    <color rgba="0.0 0.6235294117647059 0.8313725490196079 1" />
+  </material>
+
+  <material name = "heritage-orange">
+    <color rgba = "0.96078431 0.50980392 0.11764706 1" />
+  </material>
+
+  <link name="world"/>
+
+  <link name="outer_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_outer.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name = "industrial-blue"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_outer.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="1.0"/>
+      <inertia ixx="0.25" ixy="0" ixz="0" iyy="0.25" iyz="0" izz="0.5"/>
+    </inertial>
+  </link>
+
+  <link name="inner_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_inner.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name = "arches-blue"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_inner.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <link name="wheel_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_wheel.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+      <material name = "heritage-orange"/>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+  			<mesh filename="cmg_wheel.stl" scale="1.0 1.0 1.0"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <mass value="0.1"/>
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <joint name="world_to_outer" type="continuous">
+		<parent link = "world" />
+		<child link = "outer_link" />
+		<origin xyz = "0 0 0" />
+		<axis xyz = "0 1 0" />
+		<limit effort="1000" velocity="1000"/>
+	</joint>
+
+  <joint name="outer_to_inner" type="continuous">
+		<parent link = "outer_link" />
+		<child link = "inner_link" />
+		<origin xyz = "0 0 0" />
+		<axis xyz = "1 0 0" />
+		<limit effort="1000" velocity="1000"/>
+	</joint>
+
+  <joint name="inner_to_wheel" type="continuous">
+		<parent link = "inner_link" />
+		<child link = "wheel_link" />
+		<origin xyz = "0 0 0" />
+		<axis xyz = "0 0 1" />
+		<limit effort="1000" velocity="1000"/>
+	</joint>
+
+</robot>
