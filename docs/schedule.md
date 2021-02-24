@@ -105,6 +105,12 @@ description: What we will do from day to day
 ### Day 12: Stability - practice (Monday, February 22)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_90ghqyz9/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day12-survey-results" aria-expanded="false" aria-controls="day12-survey-results">Results</a>)
 * [PrairieLearn HW6](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day12_platform) - there are two notebooks here, one [before class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo.ipynb) and one [after class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo-InClass.ipynb)
+
+<div class="collapse" id="day12-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_XRO80dwhdhPl8-u7aV8f66csIV6O5A-iapgvPAOZNh3XMBnt637WC92TLyopxSsnBx6SXYwYccRh/pubchart?oid=846249499&amp;format=interactive"></iframe>
+  </div>
+</div>
