@@ -114,3 +114,7 @@ description: What we will do from day to day
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_XRO80dwhdhPl8-u7aV8f66csIV6O5A-iapgvPAOZNh3XMBnt637WC92TLyopxSsnBx6SXYwYccRh/pubchart?oid=846249499&amp;format=interactive"></iframe>
   </div>
 </div>
+
+### Day 13 (Wednesday, Febraury 24)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link)
