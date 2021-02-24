@@ -119,6 +119,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_8ilzpcnc/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb)
 * Some old reports for in-class discussion:
   - <a role="button" data-bs-toggle="collapse" href="#report01" aria-expanded="false" aria-controls="report01">Report 01</a>
   - <a role="button" data-bs-toggle="collapse" href="#report02" aria-expanded="false" aria-controls="report02">Report 02</a>
