@@ -115,6 +115,38 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 13 (Wednesday, Febraury 24)
+### Day 13: Project - getting started and working together (Wednesday, Febraury 24)
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link)
+* Some old reports for in-class discussion:
+  - <a role="button" data-bs-toggle="collapse" href="#report01" aria-expanded="false" aria-controls="report01">Report 01</a>
+  - <a role="button" data-bs-toggle="collapse" href="#report02" aria-expanded="false" aria-controls="report02">Report 02</a>
+  - <a role="button" data-bs-toggle="collapse" href="#report03" aria-expanded="false" aria-controls="report03">Report 03</a>
+* Some old code for in-class discussion:
+  - <a role="button" data-bs-toggle="collapse" href="#code01" aria-expanded="false" aria-controls="code01">Code 01</a>
+  - <a role="button" data-bs-toggle="collapse" href="#code02" aria-expanded="false" aria-controls="code02">Code 02</a>
+  - <a role="button" data-bs-toggle="collapse" href="#code03" aria-expanded="false" aria-controls="code03">Code 03</a>
+
+{: .collapse #report01 .card .card-body}
+**REPORT 01**
+![Report 01](images/report01.png)
+
+{: .collapse #report02 .card .card-body}
+**REPORT 02**
+![Report 02](images/report02.png)
+
+{: .collapse #report03 .card .card-body}
+**REPORT 03**
+![Report 03](images/report03.png)
+
+{: .collapse #code01 .card .card-body}
+**CODE 01**
+![Code 01](images/code01.png)
+
+{: .collapse #code02 .card .card-body}
+**CODE 02**
+![Code 02](images/code02.png)
+
+{: .collapse #code03 .card .card-body}
+**CODE 03**
+![Code 03](images/code03.png)
