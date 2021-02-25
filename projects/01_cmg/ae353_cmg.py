@@ -2,6 +2,7 @@ import numpy as np
 import pybullet as p
 import time
 import os
+import matplotlib.pyplot as plt
 
 class RobotSimulator:
     def __init__(self, damping=0., dt=0.001, display=True):
@@ -126,3 +127,10 @@ class RobotSimulator:
                     time.sleep(0.9 * time_to_wait)
                     time_to_wait = t - time.time()
         p.stepSimulation()
+
+    def snapshot(self, filename, width=640, height=480):
+        """
+        saves image to filename (only works with GUI enabled, i.e., with display=True)
+        """
+        im = p.getCameraImage(width, height, shadow=True, renderer=p.ER_BULLET_HARDWARE_OPENGL)
+        plt.imsave(filename, im[2])
