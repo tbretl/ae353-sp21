@@ -119,7 +119,15 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_8ilzpcnc/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day13-survey-results" aria-expanded="false" aria-controls="day13-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb) for how to implement PD control
+
+### Day 14: Project - working together (Friday, February 26)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdY2CukZRpcu6oRL_5AC9T7iiK_UhXFWntrjqrsGMMkf9cCsA/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day14_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day14_cmg/CMGDemo-InClass.ipynb) for:
+  - how to implement linear state feedback
+  - how to choose (or randomize) non-zero initial conditions
+  - how to take a snapshot of the simulation
 * Some old reports for in-class discussion:
   - <a role="button" data-bs-toggle="collapse" href="#report01" aria-expanded="false" aria-controls="report01">Report 01</a>
   - <a role="button" data-bs-toggle="collapse" href="#report02" aria-expanded="false" aria-controls="report02">Report 02</a>
@@ -158,7 +166,3 @@ description: What we will do from day to day
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQydUZQhbIIOP7tXtWpCLSCkyMKHDISYdwEGmWsGAaS5VAuROU84gJCuuyAeiNOFuhsRunXBYZWD0ED/pubchart?oid=1144405121&amp;format=interactive"></iframe>
   </div>
 </div>
-
-### Day 14 (Friday, February 26)
-
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdY2CukZRpcu6oRL_5AC9T7iiK_UhXFWntrjqrsGMMkf9cCsA/viewform?usp=sf_link)
