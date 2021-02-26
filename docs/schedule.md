@@ -121,8 +121,16 @@ description: What we will do from day to day
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day13-survey-results" aria-expanded="false" aria-controls="day13-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb) for how to implement PD control
 
+<div class="collapse" id="day13-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQydUZQhbIIOP7tXtWpCLSCkyMKHDISYdwEGmWsGAaS5VAuROU84gJCuuyAeiNOFuhsRunXBYZWD0ED/pubchart?oid=1144405121&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+
 ### Day 14: Project - working together (Friday, February 26)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_4408udcb/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdY2CukZRpcu6oRL_5AC9T7iiK_UhXFWntrjqrsGMMkf9cCsA/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day14_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day14_cmg/CMGDemo-InClass.ipynb) for:
   - how to implement linear state feedback
@@ -160,9 +168,3 @@ description: What we will do from day to day
 {: .collapse #code03 .card .card-body}
 **CODE 03**
 ![Code 03](images/code03.png)
-
-<div class="collapse" id="day13-survey-results">
-  <div class="card card-body">
-    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQydUZQhbIIOP7tXtWpCLSCkyMKHDISYdwEGmWsGAaS5VAuROU84gJCuuyAeiNOFuhsRunXBYZWD0ED/pubchart?oid=1144405121&amp;format=interactive"></iframe>
-  </div>
-</div>
