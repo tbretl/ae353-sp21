@@ -174,6 +174,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 15 (Monday, March 1)
+### Day 15: Eigenvalue placement (Monday, March 1)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_hnt46jl3/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link)
