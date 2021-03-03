@@ -13,7 +13,251 @@ description: How to get started on your design projects
 
 ---
 
-## Design Project \#1
+## Design Project \#2 (Differential drive robot)
+
+### The system
+
+The second project that you will complete this semester is to design, implement, and test a controller that enables a differential-drive robot to move quickly around a narrow track, as pictured below:
+
+![Image of differential drive robot](./images/segbot1.png) ![Image of differential drive robot](./images/segbot2.png)
+
+This robot consists of a *chassis* (dark blue), a *left wheel* (orange), and a *right wheel* (also orange). It is called "differential-drive" because two separate motors allow a different torque to be applied to the left wheel and the right wheel:
+
+* If both wheels are rotating forward at the same rate, the robot moves straight.
+* If the left wheel is rotating forward faster than the right wheel, the robot turns right.
+* If the right wheel is rotating forward faster than the left wheel, the robot turns left.
+
+This is a common design choice for mobile robots. For example, NASA used it in a prototype of [Robonaut](https://robonaut.jsc.nasa.gov/R1/sub/mobility.asp). You can read more about the reasons why in the textbook [Introduction to Autonomous Mobile Robots, Second Edition (Siegward, Nourbakhsh, and Scaramuzza, 2011)](https://mitpress.mit.edu/books/introduction-autonomous-mobile-robots-second-edition), also [available online](https://ieeexplore.ieee.org/book/6267528) (for free from the [library at Illinois](https://ieeexplore-ieee-org.proxy2.library.illinois.edu/servlet/opac?bknumber=6267528) and at other academic institutions). The two-wheeled, differential-drive design has, of course, also been popularized by [Segway](https://www.segway.com/robotics/commercial/).
+
+If we assume (incorrectly) that the track is *straight* and not *curved*, then the motion of the system is governed by ordinary differential equations with the following form (see [Studies of Systems with Nonholonomic Constraints: the Segway and the Chaplygin Sleigh (Tuttle, 2014)](https://docs.lib.purdue.edu/open_access_theses/386) for a derivation):
+
+$$\begin{bmatrix} \dot{e}_\text{lateral} \\ \dot{e}_\text{heading} \\ \dot{v} \\ \dot{w} \\ \ddot{\theta} \end{bmatrix} = f(e_\text{lateral}, e_\text{heading}, v, w, \theta, \dot{\theta}, \tau_L, \tau_R)$$
+
+The details of the function $f$ get a little complicated:
+
+$$
+\begin{bmatrix}v \sin{\left(e_\text{heading} \right)}\\w\\- \frac{2400 \tau_{L} + 2400 \tau_{R} + 2808 \left(\dot{\theta}^{2} + w^{2}\right) \sin{\left(\theta \right)} + 13 \left(250 \tau_{L} + 250 \tau_{R} - 195 w^{2} \sin{\left(2 \theta \right)} - 8829 \sin{\left(\theta \right)}\right) \cos{\left(\theta \right)}}{11700 \cos^{2}{\left(\theta \right)} - 12168}\\\frac{32 \left(- 875 \tau_{L} + 875 \tau_{R} - 1443 \dot{\theta} w \sin{\left(2 \theta \right)} - 2925 v w \sin{\left(\theta \right)}\right)}{13 \left(3120 \sin^{2}{\left(\theta \right)} + 2051\right)}\\\frac{42250 \tau_{L} + 42250 \tau_{R} - 32955 w^{2} \sin{\left(2 \theta \right)} + 300 \left(100 \tau_{L} + 100 \tau_{R} + 117 \left(\dot{\theta}^{2} + w^{2}\right) \sin{\left(\theta \right)}\right) \cos{\left(\theta \right)} - 1492101 \sin{\left(\theta \right)}}{1404 \left(25 \cos^{2}{\left(\theta \right)} - 26\right)}\end{bmatrix}
+$$
+
+So, you are encouraged to use the [symbolic description of these equations of motion]({{ site.github.repository_url }}/tree/main/projects/02_segbot/DeriveEOM.ipynb) that is provided with the [project code]({{ site.github.repository_url }}/tree/main/projects/02_segbot) --- there is no need to transcribe them yourself.
+
+In these equations:
+
+* $e_\text{lateral}$ is the **lateral error** (m), or the distance from the center of the robot (more precisely, from the *wheel center*, or the point halfway between its two wheels) to the centerline of the track --- if this quantity is positive, then the robot is too far to the left; if this quantity is negative, then the robot is too far to the right
+* $e_\text{heading}$ is the **heading error** (rad), or the difference between the orientation of the robot and the direction of the road --- if this quantity is positive, then the robot is pointing to far to the left; if this quantity is negative, then the robot is pointing too far to the right
+* $v$ is the **forward speed** (m/s) --- positive means the robot is moving forward
+* $w$ is the **turning rate** (rad/s) --- positive means the robot is turning left
+* $\theta$ is the **pitch angle** (rad) --- positive means the chassis is pitching forward
+* $\dot{\theta}$ is the **pitch rate** (rad/s)
+* $\tau_L$ is the **left wheel torque** ($N\cdot\text{m}$) applied by the chassis to the left wheel --- positive torque will cause this wheel to rotate forward
+* $\tau_R$ is the **right wheel torque** ($N\cdot\text{m}$) applied by the chassis to the right wheel --- positive torque will cause this wheel to rotate forward
+
+Sensors provide measurements of all these variables (although these sensors do *not* provide any information about the track --- its radius of curvature, for example, or whether the track curves to the left or to the right). Actuators allow you to choose what torques will be applied, up to a maximum of $\pm 5\;\text{N}\cdot\text{m}$.
+
+The code provided [here]({{ site.github.repository_url }}/tree/main/projects/02_segbot) simulates the motion of this system ([CMGDemo]({{ site.github.repository_url }}/tree/main/projects/02_segbot/SegbotDemo.ipynb)) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/02_segbot/DeriveEOM.ipynb)).
+
+The goal is to get the robot to move as fast as possible around the track without causing it to fall off.
+
+
+### Your tasks
+
+In this project, we would like you to be specific about what you mean by "success" and to provide quantitative evidence supporting the claim that you have (or have not) succeeded. People often think about this in terms of **requirements** and **verifications**.
+
+#### What is a requirement?
+
+A **requirement** is a property that the system you are designing must have in order to solve your problem (i.e., a thing that needs to get done). A good requirement is quantifiable---it involves a number that must be within a certain range in order to solve your design problem. A good requirement is also both relevant (it *must* be satisfied---it is not optional) and detailed (it can be read and understood by anyone). Here is an example of a requirement that says what needs to get done but that most engineers would consider unacceptable:
+
+> The robot shall move along the track.
+
+This requirement is not detailed. One way to improve it would be to say what it means to move along the track:
+
+> The wheel center shall remain close to the centerline of the track.
+
+This requirement is not quantifiable. One way to improve it would be to say how close:
+
+> The wheel center shall remain within $\pm 0.1~\text{meters}$ of the track centerline.
+
+Most engineers would argue that this requirement still needs improvement. How long must the wheel center remain close to the centerline of the track? Is there an upper bound on the time it must take for the wheel center to get close to the centerline of the track, assuming it starts somewhere else? Must this requirement be satisfied only for a straight track, or for a track with some prescribed radius of curvature, or for tracks having curvature within a specific range? Must this requirement be satisfied no matter what the initial conditions are? Or, are there particular operating conditions within which the requirement applies? How fast must the robot be moving along the track? Must the robot remain upright and moving at all in order to satisfy this requirement, or can it fall over and remain still so long as its wheel center is near the centerline of the track when it falls? These are examples of reasonable questions that might be asked by an engineer reviewing the requirement. Your task is to define *one* requirement---that is quantifiable, relevant, and detailed---that makes clear what the system you are designing must do in order for your goal to be achieved.
+
+#### What is a verification?
+
+A *verification* is a test that you will perform to make sure that the system you are designing meets a given requirement. A good verification is based on a measurement---it checks that a quantity is in the range specified by the requirement. A good verification also has a set of instructions for how to make the measurement (an experimental protocol) and for how to interpret the results (methods of data analysis and visualization that provide evidence the requirement has been met). Consider the requirement given above (which, as we have said, still needs improvement):
+
+> The wheel center shall remain within $\pm 0.1~\text{meters}$ of the track centerline.
+
+Here is a verification of this requirement that most engineers would consider unacceptable:
+
+> The system will be tested in simulation.
+
+This verification is not based on a measurement. Here is a better version that *is* based on a measurement:
+
+> The error between the wheel center and the track centerline will be found in simulation.
+
+This verification does not include a set of instructions for how to make the measurement or for how to interpret the results. Here is a better version that *does* include a set of instructions:
+
+> PyBullet will be be used to simulate the robot. The data generated by this simulation will be imported into a Jupyter Notebook for analysis with Python. In particular, the lateral error --- the perpendicular distance between the wheel center and the track centerline --- will be found at each time step. The maximum absolute value of lateral error over all time steps will be reported. If this maximum value is less than $0.1~\text{meters}$, the requirement is met.
+
+Most engineers would argue that this verification still needs improvement. For example, does the simulation generate the same results every time, or is there variation? It seems reasonable to suspect that different initial conditions will produce different results, as will different track shapes, different ground slopes (something else you can play with in the simulator!), etc. A reasonable engineer, then, would question whether or not the results of only *one* simulation would really show that the requirement is met. Many verifications also provide more than just a single number as evidence---for example, they might produce a figure (e.g., a plot of error as a function of time) or some other type of visualization. Your task is to define *one* verification for your requirement that has a measurement and a set of instructions for how to make the measurement and how to interpret the results.
+
+#### Things you need to do
+
+First, do all of these things:
+
+* Define a [requirement](#what-is-a-requirement) and a [verification](#what-is-a-verification).
+* Linearize the equations of motion.
+* Show that the linearized system is controllable.
+* Design a stable controller.
+* Implement this controller and test it in simulation.
+* Follow the instructions you wrote to verify that your requirement is (or is not) satisfied.
+
+Then, consider at least one of the following questions:
+
+* Is there a difference between the trajectory that is predicted by your linear model and the one that results from the nonlinear simulation?
+* How do the initial conditions affect the resulting motion?
+* How fast is it possible to get the robot to move around the track without it falling off?
+* How does performance (e.g., quantified by lateral error) vary with the choice of speed at which the robot tries to move?
+* How much can the track be tilted (see `ground_pitch` in the code) and still have your controller work?
+* Does it matter if the robot starts from rest or starts already moving (see `initial_speed` in the code)?
+* Is it possible to completely eliminate lateral error (for example), despite not knowing the shape of the track?
+
+You are also welcome to consider a similar question that you come up with on your own.
+
+### Your deliverables (by Monday, March 22)
+
+#### Video
+
+This video will satisfy the following requirements:
+
+* It must show your working control system.
+* It must visualize your answer to one question that you considered.
+* It must include some description (e.g., as text or voice) of what is being shown.
+* It must stay professional (use good sense, please).
+
+It is best if this video is created by direct screen-capture rather than, for example, by taking a video of the screen with a cell phone.
+
+It is best if this video is about 60 seconds in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep viewers' attention with anything longer.
+
+Submit your video by uploading it to the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space. Please take care to do the following:
+
+* Use a descriptive title that includes your name in parentheses --- for example, "CMG control of a spacecraft (Tim Bretl)".
+* Add the tag `DP1` (an **upper case** "DP" followed by the number "1"), so viewers can filter by project number.
+
+You are welcome to resubmit your video at any time. To do so, please "Edit" your **existing** video and then do "Replace Media". Please do **not** create a whole new submission.
+
+#### Code
+
+This code will satisfy the following requirements:
+
+* It must be in a folder called `02_code` (all numbers and **lower case**).
+* It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
+* It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
+* It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
+
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your second design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   │   GenerateResults.ipynb
+│   │   ae353-segbot.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+│       │   segbot.urdf
+│       │   track.stl
+│       │   track.urdf
+│       │   wheel.stl
+|       ...
+```
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `02_code_old` or anything like that.
+
+#### Report
+
+This report will satisfy the following requirements:
+
+* It must be a single PDF document that is called `02_report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must have a descriptive title, an author, an abstract, and a list of nomenclature.
+* It must say how you addressed all of the required tasks (see above).
+* It must **tell a story** that shows you have found and explored something that interests you.
+* It must **acknowledge and cite** any sources, including the reports of your colleagues.
+* It must include at least two figures. We will focus on these figures in our feedback of your report this time.
+
+You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
+
+It is best if this report is about 5 pages in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep readers' attention with anything longer.
+
+Submit your report by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your second design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   │   GenerateResults.ipynb
+│   │   ae353-segbot.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+│       │   segbot.urdf
+│       │   track.stl
+│       │   track.urdf
+│       │   wheel.stl
+|       ...
+```
+
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `02_report_old.pdf` or anything like that.
+
+### Evaluation
+
+We will look at your submissions in the order that they are received. Early submissions are strongly encouraged. We will provide written feedback but will provide only one of three possible grades:
+
+* Not satisfactory for B
+* Satisfactory for B
+* Better than B
+
+We will only distinguish between grades higher than B when we look at your entire portfolio of project work at the end of the semester.
+
+To improve your portfolio, you are welcome (but not required) to resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (May 5, 2021).
+
+### Frequently asked questions
+
+#### Must I submit drafts prior to the March 22 deadline?
+
+No. You are welcome to submit the final version of your project early, though! You are also welcome to revise and resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (see [Evaluation](#evaluation)).
+
+#### May I watch videos that are submitted by other students?
+
+Yes. All videos will be available in the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space as soon as they are submitted by your colleagues (see the [Video](#video) deliverable). You may watch these videos whenever you want, even before you submit your own.
+
+If you are inspired by a video, or if watching a video strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** this video in your report (and in your own video, if appropriate). Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I read code and reports that are submitted by other students?
+
+Yes. Although you are only an "Editor" of your own sub-folder (see the [Report](#report) deliverable), you are a "Previewer" of all other sub-folders on Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder. You may look at the code and read the reports of any other student whenever you want, even before you submit your own.
+
+If you are inspired by the report **or the code** of another student, or if looking at this material strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** these sources in your own report. Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I work together with other students?
+
+You must submit your own video, code, and report. You must have created them yourself and must **acknowledge and cite** any sources that strongly influenced you, including the materials submitted by your colleagues.
+
+You are encouraged to discuss the project with your colleagues and, in any case, are always able to watch the videos, look at the code, and read the reports that are submitted by other students (see the questions about [watching videos](#may-i-watch-videos-that-are-submitted-by-other-students) and [reading code or reports](#may-i-read-code-and-reports-that-are-submitted-by-other-students)).
+
+
+## Design Project \#1 (CMG)
 
 ### The system
 
