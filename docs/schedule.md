@@ -177,5 +177,15 @@ description: What we will do from day to day
 ### Day 15: Eigenvalue placement (Monday, March 1)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnt46jl3/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day15-survey-results" aria-expanded="false" aria-controls="day15-survey-results">Results</a>)
 * [PrairieLearn HW7](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+
+<div class="collapse" id="day15-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSs4szMg3QQi-2MPj8KyBhpjvbJkvqB_jHTqbBtfg5ebp7zhdrArhsufjusRNz_GcUJSi97m7VfDbYH/pubchart?oid=1618366998&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 16 (Wednesday, March 3)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link)
