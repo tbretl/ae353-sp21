@@ -190,4 +190,4 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hw6im1lh/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for:
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for a PD controller that keeps the robot upright
