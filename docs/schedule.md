@@ -56,7 +56,7 @@ description: What we will do from day to day
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSewGF7LWstbUOCkd67Q-9WRWv42mIKPagolWSe8_YgukKTr1g/viewform?usp=sf_link) to fill out by noon on Tuesday, February 9
 * [PrairieLearn HW1](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 * [Reference](/ae353-sp21/reference#what-is-a-state-space-model)
-* [Design Project \#1 (CMG)](projects/#design-project-1-cmg)
+* [Design Project \#1 (CMG)](projects#design-project-1-cmg)
 
 ### Day 08: State space models for second-order systems (Wednesday, February 10)
 
@@ -193,5 +193,5 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hw6im1lh/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link)
-* [Design Project \#2 (Differential-drive robot)](projects/#design-project-2-differential-drive-robot)
+* [Design Project \#2 (Differential-drive robot)](projects#design-project-2-differential-drive-robot)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for a PD controller that keeps the robot upright
