@@ -186,7 +186,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 16 (Wednesday, March 3)
+### Day 16: Second design project - getting started (Wednesday, March 3)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hw6im1lh/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link)
