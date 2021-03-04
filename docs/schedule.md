@@ -192,6 +192,16 @@ description: What we will do from day to day
 ### Day 16: Second design project - getting started (Wednesday, March 3)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hw6im1lh/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day16-survey-results" aria-expanded="false" aria-controls="day16-survey-results">Results</a>)
 * [Design Project \#2 (Differential-drive robot)](projects#design-project-2-differential-drive-robot)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for a PD controller that keeps the robot upright
+
+<div class="collapse" id="day16-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vShghvhJz1USdz3A3j_h2WClfhU98RRWgrNH_RijyVqIZwzrOvSKRZd-xYioxF6uGeQYnJBAuxPGnTk/pubchart?oid=1908463829&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 17 (Friday, March 5)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link)
