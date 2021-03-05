@@ -202,8 +202,13 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 17 (Friday, March 5)
+### Day 17: Ackmermann's method - controllable canonical form (Friday, March 5)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hmlrvmv1/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link)
 * [Notes (Before Class)](./notes/Day17-Acker.pdf)
+* Supplementary videos on the details of Ackermann's method:
+  - [Ackermann's Method, Part 1: Eigenvalues are invariant to coordinate transformation](https://mediaspace.illinois.edu/media/t/1_93vewoav/)
+  - [Ackermann's Method, Part 2: Controllable canonical form](https://mediaspace.illinois.edu/media/t/1_rbf0x31w/)
+  - [Ackermann's Method, Part 3: How to put a system in controllable canonical form](https://mediaspace.illinois.edu/media/t/1_e6r6ljxc/)
+  - [Ackermann's Method, Part 4: Putting it all together](https://mediaspace.illinois.edu/media/t/1_sf1ydkq4/)
