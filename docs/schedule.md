@@ -182,6 +182,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnt46jl3/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day15-survey-results" aria-expanded="false" aria-controls="day15-survey-results">Results</a>)
 * [Notes (After Class)](./notes/Day15-EigenvaluePlacement-InClass.pdf)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day15_platform) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day15_platform/PlatformDemo-InClass.ipynb) for an example of how to do eigenvalue placement with [scipy.signal.place_poles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.place_poles.html)
 * [PrairieLearn HW7](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 
 <div class="collapse" id="day15-survey-results">
