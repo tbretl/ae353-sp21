@@ -204,5 +204,6 @@ description: What we will do from day to day
 
 ### Day 17 (Friday, March 5)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_hmlrvmv1/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link)
 * [Notes (Before Class)](./notes/Day17-Acker.pdf)
