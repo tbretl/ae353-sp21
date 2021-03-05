@@ -181,6 +181,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnt46jl3/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day15-survey-results" aria-expanded="false" aria-controls="day15-survey-results">Results</a>)
+* [Notes (After Class)](./notes/Day15-EigenvaluePlacement-InClass.pdf)
 * [PrairieLearn HW7](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 
 <div class="collapse" id="day15-survey-results">
@@ -214,3 +215,4 @@ description: What we will do from day to day
   - [Ackermann's Method, Part 2: Controllable canonical form](https://mediaspace.illinois.edu/media/t/1_rbf0x31w/)
   - [Ackermann's Method, Part 3: How to put a system in controllable canonical form](https://mediaspace.illinois.edu/media/t/1_e6r6ljxc/)
   - [Ackermann's Method, Part 4: Putting it all together](https://mediaspace.illinois.edu/media/t/1_sf1ydkq4/)
+* [PrairieLearn HW8](https://www.prairielearn.org/pl/course_instance/128571/assessments)
