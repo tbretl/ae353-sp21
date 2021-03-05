@@ -207,6 +207,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_hmlrvmv1/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link)
 * [Notes (Before Class)](./notes/Day17-Acker.pdf)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day17_ccf/CCF-demos.ipynb)
 * Supplementary videos on the details of Ackermann's method:
   - [Ackermann's Method, Part 1: Eigenvalues are invariant to coordinate transformation](https://mediaspace.illinois.edu/media/t/1_93vewoav/)
   - [Ackermann's Method, Part 2: Controllable canonical form](https://mediaspace.illinois.edu/media/t/1_rbf0x31w/)
