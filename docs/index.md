@@ -64,15 +64,15 @@ There is no required textbook.
 
 You will be asked to do four things in this class:
 * Respond to a short survey either during or within 24 hours of each lecture
-* Participate in our discussion form (i.e., ask and answer questions)
+* Participate actively (e.g., ask and answer questions in our discussion forum, or make some other positive contribution to the course)
 * Complete a set of low-stakes, auto-graded homework problems
 * Complete four control design projects and collect the results (paper, code, video) in a portfolio
 
 You are guaranteed a B if you do all of the following things:
 * Submit a response to 90% of the surveys
-* Accumulate at least 400 reputation points on Campuswire
-* Submit correct answers to at least 90% of the homework problems
-* Submit all four control design projects (1) on time - no more than 5 total days late, (2) with a substantive difference between initial drafts and the final version, and (3) with evidence of having found and explored something that interests you
+* Accumulate at least 400 reputation points on Campuswire (or arrange another way of showing active participation with Prof. Bretl, for example by [contributing to the course website](development))
+* Reach an average score of at least 90% across all homework assignments
+* Submit all four control design projects on time and meeting minimum requirements
 
 During the semester, you will receive only three possible grades on your control design projects:
 * Not satisfactory for B
