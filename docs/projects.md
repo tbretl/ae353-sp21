@@ -612,7 +612,7 @@ There are three main ways to access a local copy of the Class Code, which is sto
 
 ### Using GitHub with a Clone
 A clone is a copy of a repository. You are free to make changes to the repository and will be able to get an up to date version of the original repository.
-To clone the class repository simply click the green **Code** button in the header of the repository and copy the url presented to you for cloning ```https://github.com/tbretl/ae353-sp21.git```. Make sure you have Git installed on your computer (if not, view the instructions below under Install Git client tools) and then git bash into the directory where you want to store the local copy of the repository. Then run the following commands
+To clone the class repository simply click the green **Code** button in the header of the repository and copy the url presented to you for cloning ```https://github.com/tbretl/ae353-sp21.git```. Make sure you have Git installed on your computer (if not, view the instructions below under Install Git client tools) and then git bash into the directory where you want to store the local copy of the repository. Then run the following command.
 ```
 git clone https://github.com/tbretl/ae353-sp21.git
 ``` 
