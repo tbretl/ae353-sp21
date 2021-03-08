@@ -462,6 +462,9 @@ You will quickly realize that it may be a good idea to restrict your attention o
 It is entirely up to you how to proceed, though. There is no one right answer.
 
 
+
+# Running Class Code
+
 ## Installation
 
 ### Python
@@ -602,3 +605,96 @@ You should see something like this:
 ```
 
 And, most importantly, your browser should open a page with a jupyter notebook.
+
+
+## Using GitHub
+There are three main ways to access a local copy of the Class Code, which is stored in the GitHub repository. The first way is to navigate to the class GitHub repository, click on the green code button, and select 'Download Zip'. This will provide you with a ZIP file of the class code, which can be run on your personal machine. Now you might be saying, that is great but I don't want to download a new ZIP file every time something changes. In that case you want a local copy of the class GitHub repository. You should use one of the two following methods to accomplish this.
+
+### Using GitHub with a Clone
+A clone is a copy of a repository. You are free to make changes to the repository and will be able to get an up to date version of the original repository.
+To clone the class repository simply click the green **Code** button in the header of the repository and copy the url presented to you for cloning ```https://github.com/tbretl/ae353-sp21.git```. Make sure you have Git installed on your computer (if not, view the instructions below under Install Git client tools) and then git bash into the directory where you want to store the local copy of the repository. Then run the following command.
+```
+git clone https://github.com/tbretl/ae353-sp21.git
+``` 
+The class repository will then be copied into the directory.
+
+To update the class repository you have a two options: ```fetch``` and ```pull```.
+
+* Fetching will retrieve all the new work in the class repository, but will not merge those changes into your local repository. This means that your work will not be overwritten. To fetch simply git bash into the repo directory and run the command ```git fetch origin```.
+* After fetching you can run ```git merge main```, where main is the name of the branch.
+* As a shortcut you can run the ```git pull origin``` command which will complete both fetch and merge.
+
+### Using GitHub with a Fork
+A fork of the repository is a copy of the repository. You are free to experiment with your local copy without fear of affecting the original repository. A fork is useful because unlike a clone, there is still a link between the original repository and your local copy. This means that you can contribute to the class code by using Pull Requests.
+
+To fork the class repository simply click the **Fork** button in the header of the repository. This will allow you to create a forked repository on your own GitHub account.
+Now perhaps you want to be able to access this repository from your computer, no worries. Make sure you have Git installed on your computer (if not, view the instructions below under Install Git client tools) and then git bash into the directory where you want to store the local copy of the repository. Then run the following commands.
+```
+git clone https://github.com/'GITHUB USERNAME'/'REPOSITORY NAME'.git
+
+git remote add upstream https://github.com/tbretl/ae353-sp21.git
+
+git fetch upstream
+```
+
+* Be sure to replace 'GITHUB USERNAME' with your GitHub Username and 'REPOSITORY NAME' with the name of the repository, in this case ae353-sp21.
+
+Now confirm that you have defined the remote copy of the repository correctly by running `git remote -v`. The output should look something like this.
+
+```
+origin  https://github.com/<GITHUB USERNAME>/ae353-sp21 (fetch)
+origin  https://github.com/<GITHUB USERNAME>/ae353-sp21 (push)
+upstream        https://github.com/tbretl/ae353-sp21 (fetch)
+upstream        https://github.com/tbretl/ae353-sp21 (push)
+```
+
+If you made a mistake, you can remove the remote value. To remove the upstream value, run the command `git remote remove upstream`.
+
+
+### Install Git client tools
+
+Install the latest version of Software Freedom Conservancy's Git client tools for your platform.
+
+* [Git for Windows](https://git-scm.com/download/win). This install includes the Git version control system and Git Bash, the command-line app that you use to interact with your local Git repository.
+* Git for Mac is provided as part of the Xcode Command Line Tools. Simply run git from the command line. You will be prompted to install the command line tools if needed. You can also download [Git for Mac](https://git-scm.com/download/mac) from the Software Freedom Conservancy.
+* [Git for Linux and Unix](https://git-scm.com/download/linux)
+
+
+### Shortcut to running Class Code
+
+If you are sick of having to use the terminal to run the class code, you can create a small program called a bash script to do it for you.
+
+#### On Windows
+Open Notepad or a text editor of your choice and paste the following lines of code. Then change the top two paths: the CONDA PATH, the path to your installation of Miniconda or Anacoda, and the CLASSCODE PATH, the path to your local copy of the class code repository. If you called your ae353 environment something different, you should change it here as well by changing the ENVNAME variable. Next save the batch script as something like ```runClassCode.bat``` and save it in your desired location. When you double click the script, it will open a terminal and run all the necessary commands for you and will open up a jupyter notebook in the directory housing your local copy of the class code repository. If seeing some lines of code popping up on the terminal makes you nervous, no worries, simply remove the ```rem``` before ```@echo OFF``` in the first line of your batch script.
+
+```
+rem @echo OFF
+
+rem Define here the path to your conda installation
+set CONDAPATH=C:\Users\<USERNAME>\Anaconda3
+rem Define here the name of the environment
+set ENVNAME=ae353-bullet
+rem Define here the path to the class code
+set CLASSCODEPATH=C:\Users\<USERNAME>\AE 353 - Aerospace Control Systems\Class Code\ae353-sp21
+
+
+rem CHANGE THE CODE BELOW THIS LINE AT YOUR OWN RISK.
+
+cd %CLASSCODEPATH%
+
+if %ENVNAME%==base (set ENVPATH=%CONDAPATH%) else (set ENVPATH=%CONDAPATH%\envs\%ENVNAME%)
+
+
+call %CONDAPATH%\Scripts\activate.bat %ENVPATH%
+
+rem Run Jupyter Notebook in that environment
+jupyter notebook
+
+rem Deactivate the environment
+call conda deactivate
+```
+#### On Mac or Linux
+You can do accomplish the same task by creating a .sh file.
+
+
+
