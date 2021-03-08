@@ -224,6 +224,8 @@ description: What we will do from day to day
   </div>
 </div>
 
+## Week 7
+
 ### Day 18: Ackermann's method - implications for controllability (Monday, March 8)
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeAPG_Uq04tIH8kWoMyF8HbNS_5A02XG_3y077J3vjRhtQTJw/viewform?usp=sf_link)
