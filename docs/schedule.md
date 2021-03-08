@@ -228,7 +228,12 @@ description: What we will do from day to day
 
 ### Day 18: Ackermann's method - implications for controllability (Monday, March 8)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_9d7uv2dc/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeAPG_Uq04tIH8kWoMyF8HbNS_5A02XG_3y077J3vjRhtQTJw/viewform?usp=sf_link)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
 * [Notes (Before Class)](./notes/Day18-Controllability.pdf)
+* [Notes (After Class)](./notes/Day18-Controllability-InClass.pdf)
 * [PrairieLearn HW9](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+
+### Day 19: Examples of what it means for a system to be controllable (Wednesday, March 10)
+
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
