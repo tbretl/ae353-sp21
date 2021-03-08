@@ -207,7 +207,7 @@ description: What we will do from day to day
 ### Day 17: Ackmermann's method - controllable canonical form (Friday, March 5)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hmlrvmv1/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day17-survey-results" aria-expanded="false" aria-controls="day17-survey-results">Results</a>)
 * [Notes (Before Class)](./notes/Day17-Acker.pdf)
 * [Notes (After Class)](./notes/Day17-Acker-InClass.pdf)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day17_ccf/CCF-demos.ipynb)
@@ -217,3 +217,13 @@ description: What we will do from day to day
   - [Ackermann's Method, Part 3: How to put a system in controllable canonical form](https://mediaspace.illinois.edu/media/t/1_e6r6ljxc/)
   - [Ackermann's Method, Part 4: Putting it all together](https://mediaspace.illinois.edu/media/t/1_sf1ydkq4/)
 * [PrairieLearn HW8](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+
+<div class="collapse" id="day17-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTdUCOy6Rr24D7G1Q6F-YDk7IL9z4M-OkQL0e5QOu-Ho4qD8f_Iw4XngM9dMfb-FmTolER_OFexEoB2/pubchart?oid=1421442809&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 18 (Monday, March 8)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeAPG_Uq04tIH8kWoMyF8HbNS_5A02XG_3y077J3vjRhtQTJw/viewform?usp=sf_link)
