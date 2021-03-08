@@ -236,4 +236,4 @@ description: What we will do from day to day
 
 ### Day 19: Examples of what it means for a system to be controllable (Wednesday, March 10)
 
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day18_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
