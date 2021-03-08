@@ -204,7 +204,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 17: Ackmermann's method - controllable canonical form (Friday, March 5)
+### Day 17: Ackermann's method - controllable canonical form (Friday, March 5)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hmlrvmv1/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day17-survey-results" aria-expanded="false" aria-controls="day17-survey-results">Results</a>)
