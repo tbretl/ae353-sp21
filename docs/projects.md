@@ -54,7 +54,7 @@ In these equations:
 
 Sensors provide measurements of all these variables (although these sensors do *not* provide any information about the track --- its radius of curvature, for example, or whether the track curves to the left or to the right). Actuators allow you to choose what torques will be applied, up to a maximum of $\pm 5\;\text{N}\cdot\text{m}$.
 
-The code provided [here]({{ site.github.repository_url }}/tree/main/projects/02_segbot) simulates the motion of this system ([CMGDemo]({{ site.github.repository_url }}/tree/main/projects/02_segbot/SegbotDemo.ipynb)) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/02_segbot/DeriveEOM.ipynb)).
+The code provided [here]({{ site.github.repository_url }}/tree/main/projects/02_segbot) simulates the motion of this system ([SegbotDemo]({{ site.github.repository_url }}/tree/main/projects/02_segbot/SegbotDemo.ipynb)) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/02_segbot/DeriveEOM.ipynb)).
 
 The goal is to get the robot to move as fast as possible around the track without causing it to fall off.
 
@@ -139,8 +139,8 @@ It is best if this video is about 60 seconds in length --- it will be hard to sh
 
 Submit your video by uploading it to the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space. Please take care to do the following:
 
-* Use a descriptive title that includes your name in parentheses --- for example, "CMG control of a spacecraft (Tim Bretl)".
-* Add the tag `DP1` (an **upper case** "DP" followed by the number "1"), so viewers can filter by project number.
+* Use a descriptive title that includes your name in parentheses --- for example, "Control of a differential drive robot (Tim Bretl)".
+* Add the tag `DP2` (an **upper case** "DP" followed by the number "2"), so viewers can filter by project number.
 
 You are welcome to resubmit your video at any time. To do so, please "Edit" your **existing** video and then do "Replace Media". Please do **not** create a whole new submission.
 
@@ -615,7 +615,7 @@ A clone is a copy of a repository. You are free to make changes to the repositor
 To clone the class repository simply click the green **Code** button in the header of the repository and copy the url presented to you for cloning ```https://github.com/tbretl/ae353-sp21.git```. Make sure you have Git installed on your computer (if not, view the instructions below under Install Git client tools) and then git bash into the directory where you want to store the local copy of the repository. Then run the following command.
 ```
 git clone https://github.com/tbretl/ae353-sp21.git
-``` 
+```
 The class repository will then be copied into the directory.
 
 To update the class repository you have a two options: ```fetch``` and ```pull```.
@@ -695,6 +695,3 @@ call conda deactivate
 ```
 #### On Mac or Linux
 You can do accomplish the same task by creating a .sh file.
-
-
-
