@@ -243,9 +243,16 @@ description: What we will do from day to day
 ### Day 19: Examples of what it means for a system to be controllable (Wednesday, March 10)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnn8rvm2/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSemeHLQnWaiDCpE3CthZqkkeKaRAkVBLO-Jwzdh8IFtXIw1KA/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSemeHLQnWaiDCpE3CthZqkkeKaRAkVBLO-Jwzdh8IFtXIw1KA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day19-survey-results" aria-expanded="false" aria-controls="day19-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
+
+<div class="collapse" id="day19-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRee2HZDmwynXpALVzR0pjh8DcD4j4zcdP9eEf98x_NZwA8qHRjd5lJJZ61cg7KOUsLSFqL3bwGF9HE/pubchart?oid=861225748&amp;format=interactive"></iframe>
+  </div>
+</div>
 
 ### Day 20: How to improve your design projects (Friday, March 12)
 
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfvfIBxZA--KsSlgtFSGR9lEvWpl4rJqE-zQ6qszH5LaLbrGA/viewform?usp=sf_link)
 * [Form to submit a project revision](https://docs.google.com/forms/d/e/1FAIpQLSf_mNfpDIt40F5JforQAA54fyc4Q_WgCG-vmPNQV8atj2oh-w/viewform?usp=sf_link)
