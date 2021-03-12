@@ -256,3 +256,4 @@ description: What we will do from day to day
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfvfIBxZA--KsSlgtFSGR9lEvWpl4rJqE-zQ6qszH5LaLbrGA/viewform?usp=sf_link)
 * [Form to submit a project revision](https://docs.google.com/forms/d/e/1FAIpQLSf_mNfpDIt40F5JforQAA54fyc4Q_WgCG-vmPNQV8atj2oh-w/viewform?usp=sf_link)
+* [Shared document for collaborative in-class discussion](https://docs.google.com/document/d/1CYrNM3l2_w0XKv_xb5GccqLOrFv9USyypcXsEJxhmhk/edit?usp=sharing)
