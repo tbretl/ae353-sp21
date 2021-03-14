@@ -255,6 +255,16 @@ description: What we will do from day to day
 ### Day 20: How to improve your design projects (Friday, March 12)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_dgtyn48w/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfvfIBxZA--KsSlgtFSGR9lEvWpl4rJqE-zQ6qszH5LaLbrGA/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfvfIBxZA--KsSlgtFSGR9lEvWpl4rJqE-zQ6qszH5LaLbrGA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day20-survey-results" aria-expanded="false" aria-controls="day20-survey-results">Results</a>)
 * [Form to submit a project revision](https://docs.google.com/forms/d/e/1FAIpQLSf_mNfpDIt40F5JforQAA54fyc4Q_WgCG-vmPNQV8atj2oh-w/viewform?usp=sf_link)
 * [Shared document for collaborative in-class discussion about how to do your own work when collaborating with others](https://docs.google.com/document/d/1CYrNM3l2_w0XKv_xb5GccqLOrFv9USyypcXsEJxhmhk/edit?usp=sharing)
+
+<div class="collapse" id="day20-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQZmb31F-uu0SHwtP9RRG5vxKmQDueMO5Ose6LeasO-iRoboNj3EGQ0d0Yn2q6_JeN-4Jxs_-nSbmlz/pubchart?oid=1288860890&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 21 (Monday, March 15)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfmkIEg8khvf6DrF-arOlqBN5zt5lK8pPxp2qjC6SF6wQCi-g/viewform?usp=sf_link)
