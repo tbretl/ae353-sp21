@@ -269,6 +269,7 @@ description: What we will do from day to day
 
 ### Day 21: LQR - scalar example (Monday, March 15)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_gk0vqpgw/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfmkIEg8khvf6DrF-arOlqBN5zt5lK8pPxp2qjC6SF6wQCi-g/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day21_lqr_cost/)
 * [PrairieLearn HW10](https://www.prairielearn.org/pl/course_instance/128571/assessments)
