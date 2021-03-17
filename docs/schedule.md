@@ -270,6 +270,16 @@ description: What we will do from day to day
 ### Day 21: LQR - scalar example (Monday, March 15)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_gk0vqpgw/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfmkIEg8khvf6DrF-arOlqBN5zt5lK8pPxp2qjC6SF6wQCi-g/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfmkIEg8khvf6DrF-arOlqBN5zt5lK8pPxp2qjC6SF6wQCi-g/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day21-survey-results" aria-expanded="false" aria-controls="day21-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day21_lqr_cost/)
 * [PrairieLearn HW10](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+
+<div class="collapse" id="day21-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRNsjHB1wfMlBuXrRPDXpdN-jQD1ce9MPWs0t3QmzStiM0p8gxgV7PvVGnmP2Tv12pJHZizF6U4KR76/pubchart?oid=1729381461&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 22 (Wednesday, March 17)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfsXOl_Zy6qbGMZLoIp99PKZxCbPX_0n67F13R9nWPR-jRCGQ/viewform?usp=sf_link)
