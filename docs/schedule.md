@@ -284,3 +284,4 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_vjy0xwiy/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfsXOl_Zy6qbGMZLoIp99PKZxCbPX_0n67F13R9nWPR-jRCGQ/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day22_lqr_ics_and_weights/)
