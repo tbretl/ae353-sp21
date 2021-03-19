@@ -291,3 +291,7 @@ description: What we will do from day to day
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnz1g7xp5GpNhfamZ8YFjd69i-XtleTGrzVw1OHH-7fzRkA3_fcF_fnX1i93OfJbMwqX2z-q40JOJM/pubchart?oid=399715586&amp;format=interactive"></iframe>
   </div>
 </div>
+
+### Day 23 (Friday, March 19)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjQMS2XLYGRv3_QrRkfDa-NjdIzew3wyOXe3rvCOKr-jbBtQ/viewform?usp=sf_link)
