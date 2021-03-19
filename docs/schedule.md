@@ -283,5 +283,11 @@ description: What we will do from day to day
 ### Day 22: LQR - effect of initial conditions and of weights (Wednesday, March 17)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_vjy0xwiy/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfsXOl_Zy6qbGMZLoIp99PKZxCbPX_0n67F13R9nWPR-jRCGQ/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfsXOl_Zy6qbGMZLoIp99PKZxCbPX_0n67F13R9nWPR-jRCGQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day22-survey-results" aria-expanded="false" aria-controls="day22-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day22_lqr_ics_and_weights/)
+
+<div class="collapse" id="day22-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRnz1g7xp5GpNhfamZ8YFjd69i-XtleTGrzVw1OHH-7fzRkA3_fcF_fnX1i93OfJbMwqX2z-q40JOJM/pubchart?oid=399715586&amp;format=interactive"></iframe>
+  </div>
+</div>
