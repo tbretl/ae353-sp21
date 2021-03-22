@@ -295,4 +295,15 @@ description: What we will do from day to day
 ### Day 23: LQR - general statement and example application (Friday, March 19)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_7hrz89kz/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjQMS2XLYGRv3_QrRkfDa-NjdIzew3wyOXe3rvCOKr-jbBtQ/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjQMS2XLYGRv3_QrRkfDa-NjdIzew3wyOXe3rvCOKr-jbBtQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day23-survey-results" aria-expanded="false" aria-controls="day23-survey-results">Results</a>)
+
+<div class="collapse" id="day23-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyc3rZB8rkzTMd38iJ39LrfLnFoQTVuDejNwXBqHYjUhNaB2-elRRh6fjr2aIpok4ihdmO4u8kWb56/pubchart?oid=2116592378&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 9
+
+### Day 24 (Monday, March 22)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScBugTuhp0AIyAocD-tSHomw73T0GfVh7HTWIbujTZl3oD8tw/viewform?usp=sf_link)
