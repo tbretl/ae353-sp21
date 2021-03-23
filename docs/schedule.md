@@ -296,3 +296,9 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_7hrz89kz/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfjQMS2XLYGRv3_QrRkfDa-NjdIzew3wyOXe3rvCOKr-jbBtQ/viewform?usp=sf_link)
+
+## Week 9
+
+### Day 24: How to avoid self-plagiarism, and what to do if we can only measure part of the state (Monday, March 22)
+
+* [Video](https://mediaspace.illinois.edu/media/t/1_zl94rvms/)
