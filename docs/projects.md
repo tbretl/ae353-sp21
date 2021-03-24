@@ -473,7 +473,7 @@ We recommend the use of [conda](https://docs.conda.io/) to install python by fol
 
 To confirm that installation was successful, do three things.
 
-First, open a terminal and run `conda list`. You should see something like this:
+First, open a terminal in Mac or the Anaconda Powershell Prompt (miniconda3) in Windows and run `conda list`. You should see something like this:
 ```
 (base) timothybretl@Timothys-MacBook-Pro Website % conda list
 # packages in environment at /Users/timothybretl/Applications/miniconda3:
@@ -513,7 +513,7 @@ yaml                      0.2.5                haf1e3a3_0
 zlib                      1.2.11               h1de35cc_3  
 ```
 
-Second, in the same terminal, run `which python`. You should see something like this (crucially, with *miniconda3* in the path somewhere):
+Second, in the same terminal, run `which python` for Mac or `where python` for Windows. You should see something like this (crucially, with *miniconda3* in the path somewhere):
 ```
 (base) timothybretl@Timothys-MacBook-Pro Website % which python
 /Users/timothybretl/Applications/miniconda3/bin/python
@@ -534,7 +534,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 One reason to use conda is that it is then easy to install everything else. Do the following two things to setup an environment in which you can run examples with pybullet.
 
-First, create a text file named `ae353-bullet.yml` with the following contents (a file exactly like this can be downloaded from [here](https://github.com/tbretl/ae353-sp21/blob/main/examples/ae353-bullet.yml)):
+First, create a text file named `ae353-bullet.yml` with the following contents (a file exactly like this can be downloaded from [here](https://github.com/tbretl/ae353-sp21/blob/main/examples/ae353-bullet.yml) by right-clicking `Raw` and selecting "Download Linked File As...". This will allow you to choose the save location.):
 ```
 name: ae353-bullet
 channels:
@@ -550,8 +550,9 @@ dependencies:
     - pybullet
     - notebook
 ```
+Note: When downloading `ae353-bullet.yml` it may download with a .html or .txt extension. If this is the case, convert the file to a .yml before proceeding.
 
-Second, open a terminal, navigate to the folder containing `ae353-bullet.yml`, and run this command:
+Next, open a terminal, navigate to the folder containing `ae353-bullet.yml`, and run this command:
 ```
 conda env create -f ae353-bullet.yml
 ```
@@ -563,6 +564,7 @@ First, activate your new environment with `conda activate ae353-bullet`:
 (base) timothybretl@Timothys-MacBook-Pro Website % conda activate ae353-bullet
 (ae353-bullet) timothybretl@Timothys-MacBook-Pro Website %
 ```
+Note: This installation will take a few minutes.
 
 Second, start python and `import pybullet`:
 ```
@@ -577,7 +579,7 @@ pybullet build time: Jan 22 2021 10:46:31
 
 ### Jupyter notebooks
 
-Notebooks are a convenient way to play around, to debug code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)). In a terminal, do this:
+Notebooks are a convenient way to play around, to debug code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) and follow instructions for "Kernels for different environments"). In a terminal, do this:
 ```
 python -m ipykernel install --user --name ae353-bullet --display-name "Python (ae353-bullet)"
 ```
