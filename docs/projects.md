@@ -556,6 +556,7 @@ Next, open a terminal, navigate to the folder containing `ae353-bullet.yml`, and
 ```
 conda env create -f ae353-bullet.yml
 ```
+*Note: This installation will take a few minutes.*
 
 To confirm that installation was successful, in the same terminal, do two things.
 
@@ -564,7 +565,6 @@ First, activate your new environment with `conda activate ae353-bullet`:
 (base) timothybretl@Timothys-MacBook-Pro Website % conda activate ae353-bullet
 (ae353-bullet) timothybretl@Timothys-MacBook-Pro Website %
 ```
-*Note: This installation will take a few minutes.*
 
 Second, start python and `import pybullet`:
 ```
