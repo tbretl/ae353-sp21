@@ -552,7 +552,7 @@ dependencies:
 ```
 *Note: When downloading `ae353-bullet.yml` it may download with a .html or .txt extension. If this is the case, convert the file to a .yml before proceeding.*
 
-Next, open a terminal, navigate to the folder containing `ae353-bullet.yml`, and run this command:
+Next, open a terminal in Mac or an "Anaconda Powershell Prompt (miniconda3)" in Windows, navigate to the folder containing `ae353-bullet.yml`, and run this command:
 ```
 conda env create -f ae353-bullet.yml
 ```
@@ -579,7 +579,7 @@ pybullet build time: Jan 22 2021 10:46:31
 
 ### Jupyter notebooks
 
-Notebooks are a convenient way to play around, to debug code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) and follow instructions for "Kernels for different environments"). In a terminal, do this:
+Notebooks are a convenient way to play around, to debug code, and to share results. To use notebooks with your new environment (`ae353-bullet`), you need to install an ipython kernel that corresponds to this environment (see [here](https://ipython.readthedocs.io/en/stable/install/kernel_install.html) and follow instructions for "Kernels for different environments"). In a terminal in Mac or an "Anaconda Powershell Prompt (miniconda3)" in Windows, do this:
 ```
 python -m ipykernel install --user --name ae353-bullet --display-name "Python (ae353-bullet)"
 ```
