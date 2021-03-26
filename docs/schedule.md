@@ -318,5 +318,6 @@ description: What we will do from day to day
 
 ### Day 25: Design project \#3 - getting started (Friday, March 26)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_ch4za3ak/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc3w3ilZeYIZgo_wxje2mrA0W4gUhn5jpv7qS0g9UAk4PZF4A/viewform?usp=sf_link)
 * [Design Project \#3 (Spacecraft with star tracker)](projects#design-project-3-spacecraft-with-star-tracker)
