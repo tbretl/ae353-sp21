@@ -13,6 +13,218 @@ description: How to get started on your design projects
 
 ---
 
+## Design Project \#3 (Spacecraft with star tracker)
+
+### The system
+
+The second project that you will complete this semester is to design, implement, and test a controller that enables a spacecraft to maintain a fixed orientation, as pictured below:
+
+![Image of spacecraft](./images/spacecraft.png)
+
+This spacecraft (blue) has four reaction wheels (orange) that are arranged in a pyramid.
+
+The actuators are motors that allow a torque to be applied by the spacecraft to each wheel, up to a maximum of $\pm 5\;\text{N}\cdot\text{m}$. The rotational motion of the system is governed by ordinary differential equations with the following form:
+
+$$\begin{bmatrix} \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \\ \dot{w_x} \\ \dot{w_y} \\ \dot{w_z} \end{bmatrix} = f\left(\phi, \theta, \psi, w_x, w_y, w_z, \tau_1, \tau_2, \tau_3, \tau_4\right)$$
+
+In these equations:
+
+* $\phi$ is the **roll angle** (rad)
+* $\theta$ is the **pitch angle** (rad)
+* $\psi$ is the **yaw angle** (rad)
+* $w_x$ is the **angular velocity about the body-fixed $x$ axis** (rad/s), which points forward
+* $w_y$ is the **angular velocity about the body-fixed $y$ axis** (rad/s), which points left
+* $w_z$ is the **angular velocity about the body-fixed $z$ axis** (rad/s), which points up
+* $\tau_1$ is the **torque applied to wheel 1** ($N\cdot\text{m}$), which is in front
+* $\tau_2$ is the **torque applied to wheel 2** ($N\cdot\text{m}$), which is in back
+* $\tau_3$ is the **torque applied to wheel 3** ($N\cdot\text{m}$), which is on the left
+* $\tau_4$ is the **torque applied to wheel 4** ($N\cdot\text{m}$), which is on the right
+
+A [symbolic description of these equations of motion]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft/DeriveEOM.ipynb) is provided with the [project code]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft).
+
+The sensor is a star tracker. It measures the position of each star and returns that position either as its 2D position in an image if the star is within the field of view or as "not a number" (i.e., `np.nan`) if the star is not within the field of view. This measurement has the following form for each star:
+
+$$\begin{bmatrix} y_\text{star} \\ z_\text{star} \end{bmatrix} = g(\phi, \theta, \psi, \alpha, \delta)$$
+
+You will already recognize the roll, pitch, and yaw angles in this equation. The other variables are:
+
+* $\alpha$ is the **right ascension** (rad) of the star
+* $\delta$ is the **declination** (rad) of the star
+
+Again, a [symbolic description of this equation]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft/DeriveEOM.ipynb) is provided with the [project code]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft).
+
+The code provided [here]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft) simulates the motion of this system ([SpacecraftDemo]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft/SpacecraftDemo.ipynb)) and also derives both the equations of motion and the sensor model in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/03_spacecraft/DeriveEOM.ipynb)).
+
+The goal is to keep the spacecraft fixed at zero roll, pitch, and yaw despite noisy sensor measurements and a shooting star (!?!).
+
+
+### Your tasks
+
+The focus of your analysis this time will be on data collection. The initial conditions, the sensor measurements, and the disturbances are random. So, for a given control design, your results will vary (perhaps significantly). It is not enough to look at the results of one simulation---you will have to look at the results of many simulations. At minimum, for each design you consider, you should do the following:
+
+* Collect data from at least 100 simulations.
+* Compute the minimum, maximum, median, mean, and standard deviation of the mean square error in roll, pitch, and yaw angles.
+* Plot a histogram of the mean square error in roll, pitch, and yaw angles.
+
+Remember that the simulation code provides an option to turn the display off, which can speed up data collection a lot.
+
+#### Things you need to do
+
+First, do all of these things:
+
+* Define a [requirement](#what-is-a-requirement) and a [verification](#what-is-a-verification), just as you did in the [second design project](#design-project-2-differential-drive-robot).
+* Linearize the equations of motion and the sensor model.
+* Show that the linearized system is both controllable and observable.
+* Design a stable controller and a stable observer.
+* Implement both the controller and observer and test them in simulation.
+* Follow the instructions you wrote to verify that your requirement is (or is not) satisfied.
+* Include at least one figure of aggregate results (e.g., a histogram).
+* Include at least one figure that provides evidence the observer is working (e.g., a plot of error in the state estimation as a function of time).
+
+Then, consider at least one of the following questions:
+
+* How do your results change with different amounts of sensor noise?
+* How do your results change with a different number or arrangement of stars? (This is something you can choose!)
+* Can you design a controller that allows you to recover from losing sight of one or more stars?
+
+You are also welcome to consider a similar question that you come up with on your own (e.g., see the list of suggested questions for the other design projects).
+
+### Your deliverables (by Wednesday, April 14)
+
+#### Video
+
+This video will satisfy the following requirements:
+
+* It must show your working control system.
+* It must visualize your answer to one question that you considered.
+* It must include some description (e.g., as text or voice) of what is being shown.
+* It must stay professional (use good sense, please).
+
+It is best if this video is created by direct screen-capture rather than, for example, by taking a video of the screen with a cell phone.
+
+It is best if this video is about 60 seconds in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep viewers' attention with anything longer.
+
+Submit your video by uploading it to the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space. Please take care to do the following:
+
+* Use a descriptive title that includes your name in parentheses --- for example, "Control of a differential drive robot (Tim Bretl)".
+* Add the tag `DP3` (an **upper case** "DP" followed by the number "3"), so viewers can filter by project number.
+
+You are welcome to resubmit your video at any time. To do so, please "Edit" your **existing** video and then do "Replace Media". Please do **not** create a whole new submission.
+
+#### Code
+
+This code will satisfy the following requirements:
+
+* It must be in a folder called `03_code` (all numbers and **lower case**).
+* It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
+* It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
+* It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
+
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your second design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   03_report.pdf
+└───03_code
+│   │   GenerateResults.ipynb
+│   │   ae353-spacecraft.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   shootingstar.urdf
+│       │   spacecraft.stl
+|       |   spacecraft.urdf
+│       │   sphere.urdf
+│       │   wheel.stl
+|       ...
+```
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `02_code_old` or anything like that.
+
+#### Report
+
+This report will satisfy the following requirements:
+
+* It must be a single PDF document that is called `03_report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must have a descriptive title, an author, an abstract, and a list of nomenclature.
+* It must say how you addressed all of the required tasks (see above).
+* It must **tell a story** that shows you have found and explored something that interests you.
+* It must **acknowledge and cite** any sources, including the reports of your colleagues.
+
+Our review of your technical approach will place special emphasis on *data collection and analysis.* Our review of your report will place special emphasis on your *presentation of equations*.
+
+You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
+
+It is best if this report is about 5 pages in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep readers' attention with anything longer.
+
+Submit your report by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your second design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   03_report.pdf
+└───03_code
+│   │   GenerateResults.ipynb
+│   │   ae353-spacecraft.py
+│   └───urdf
+│       │   checker_blue.png
+│       │   shootingstar.urdf
+│       │   spacecraft.stl
+|       |   spacecraft.urdf
+│       │   sphere.urdf
+│       │   wheel.stl
+|       ...
+```
+
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `03_report_old.pdf` or anything like that.
+
+### Evaluation
+
+We will look at your submissions in the order that they are received. Early submissions are strongly encouraged. We will provide written feedback but will provide only one of three possible grades:
+
+* Not satisfactory for B
+* Satisfactory for B
+* Better than B
+
+We will only distinguish between grades higher than B when we look at your entire portfolio of project work at the end of the semester.
+
+To improve your portfolio, you are welcome (but not required) to resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (May 5, 2021).
+
+### Frequently asked questions
+
+#### Must I submit drafts prior to the April 14 deadline?
+
+No. You are welcome to submit the final version of your project early, though! You are also welcome to revise and resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (see [Evaluation](#evaluation)).
+
+#### May I watch videos that are submitted by other students?
+
+Yes. All videos will be available in the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space as soon as they are submitted by your colleagues (see the [Video](#video) deliverable). You may watch these videos whenever you want, even before you submit your own.
+
+If you are inspired by a video, or if watching a video strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** this video in your report (and in your own video, if appropriate). Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I read code and reports that are submitted by other students?
+
+Yes. Although you are only an "Editor" of your own sub-folder (see the [Report](#report) deliverable), you are a "Previewer" of all other sub-folders on Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder. You may look at the code and read the reports of any other student whenever you want, even before you submit your own.
+
+If you are inspired by the report **or the code** of another student, or if looking at this material strongly influences the way you proceed with your own design project, then you must **acknowledge and cite** these sources in your own report. Failure to do so would be considered [plagiarism](https://studentcode.illinois.edu/article1/part4/1-402/).
+
+#### May I work together with other students?
+
+You must submit your own video, code, and report. You must have created them yourself and must **acknowledge and cite** any sources that strongly influenced you, including the materials submitted by your colleagues.
+
+You are encouraged to discuss the project with your colleagues and, in any case, are always able to watch the videos, look at the code, and read the reports that are submitted by other students (see the questions about [watching videos](#may-i-watch-videos-that-are-submitted-by-other-students) and [reading code or reports](#may-i-read-code-and-reports-that-are-submitted-by-other-students)).
+
+
 ## Design Project \#2 (Differential drive robot)
 
 ### The system
