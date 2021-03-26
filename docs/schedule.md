@@ -308,4 +308,14 @@ description: What we will do from day to day
 ### Day 24: How to avoid self-plagiarism, and what to do if we can only measure part of the state (Monday, March 22)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_zl94rvms/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScBugTuhp0AIyAocD-tSHomw73T0GfVh7HTWIbujTZl3oD8tw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScBugTuhp0AIyAocD-tSHomw73T0GfVh7HTWIbujTZl3oD8tw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day24-survey-results" aria-expanded="false" aria-controls="day24-survey-results">Results</a>)
+
+<div class="collapse" id="day24-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQkxilYYf4CgQ2zw7Jdlnlm6CFFP9XXiEwDjPp5j_6j6UaTDgCDsrj5YwGxUe8hg_vWM0XoW6jtto_b/pubchart?oid=2101452987&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 25 (Friday, March 26)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc3w3ilZeYIZgo_wxje2mrA0W4gUhn5jpv7qS0g9UAk4PZF4A/viewform?usp=sf_link)
