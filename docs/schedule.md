@@ -319,6 +319,18 @@ description: What we will do from day to day
 ### Day 25: Design project \#3 - getting started (Friday, March 26)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_ch4za3ak/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc3w3ilZeYIZgo_wxje2mrA0W4gUhn5jpv7qS0g9UAk4PZF4A/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc3w3ilZeYIZgo_wxje2mrA0W4gUhn5jpv7qS0g9UAk4PZF4A/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day25-survey-results" aria-expanded="false" aria-controls="day25-survey-results">Results</a>)
 * [Design Project \#3 (Spacecraft with star tracker)](projects#design-project-3-spacecraft-with-star-tracker)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day25_spacecraft) - playing around with the third design project
+
+<div class="collapse" id="day25-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSyFeAiCTfwsj5IiT30DIdTT3BZkQA7_u9-HZClTQxg2xaNPBdRY1J5eKzGxdULcb_YkSSuOt6vHLev/pubchart?oid=1813633019&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 10
+
+### Day 26 (Monday, March 29)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link)
