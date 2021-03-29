@@ -331,6 +331,8 @@ description: What we will do from day to day
 
 ## Week 10
 
-### Day 26 (Monday, March 29)
+### Day 26: Observers (Monday, March 29)
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day26_platform_observer)
+* [PrairieLearn HW11](https://www.prairielearn.org/pl/course_instance/128571/assessments)
