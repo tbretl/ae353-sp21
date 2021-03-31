@@ -334,6 +334,16 @@ description: What we will do from day to day
 ### Day 26: Observers (Monday, March 29)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_1af2rp5s/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day26-survey-results" aria-expanded="false" aria-controls="day26-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day26_platform_observer)
 * [PrairieLearn HW11](https://www.prairielearn.org/pl/course_instance/128571/assessments)
+
+<div class="collapse" id="day26-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR1mcC-r7jqD5goUzFz9NjqvDP-ZYcQudL2WGngpL9Y8b9iHPJdatGpM-jT6h7QVmLl-6MjtXV8tl7g/pubchart?oid=1190991108&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 27 (Wednesday, March 31)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link)
