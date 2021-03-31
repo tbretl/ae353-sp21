@@ -335,7 +335,6 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_1af2rp5s/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day26-survey-results" aria-expanded="false" aria-controls="day26-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day26_platform_observer)
 * [PrairieLearn HW11](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 
 <div class="collapse" id="day26-survey-results">
@@ -347,3 +346,11 @@ description: What we will do from day to day
 ### Day 27 (Wednesday, March 31)
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day27_platform_observer)
+* Supplementary videos on the details of observer design and analysis:
+  - [Observers, Part 1: What is an observer?](https://mediaspace.illinois.edu/media/t/1_bwsv03zv/)
+  - [Observers, Part 2: Do observers make sense?](https://mediaspace.illinois.edu/media/t/1_xf9cytda/)
+  - [Observers, Part 3: When does an observer work?](https://mediaspace.illinois.edu/media/t/1_ma7mf2v3/)
+  - [Observers, Part 4: How to choose L for an observer?](https://mediaspace.illinois.edu/media/t/1_6kd1vo4k/)
+  - [Observers, Part 5: Do observers break controllers?](https://mediaspace.illinois.edu/media/t/1_93pesfka/)
+  - [Observers, Part 6: When is observer design possible?](https://mediaspace.illinois.edu/media/t/1_rxgahknr/)
