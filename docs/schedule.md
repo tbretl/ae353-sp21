@@ -331,7 +331,7 @@ description: What we will do from day to day
 
 ## Week 10
 
-### Day 26: Observers (Monday, March 29)
+### Day 26: Finite difference approximation does not work with noisy sensor measurements (Monday, March 29)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_1af2rp5s/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Cff_Ra5BzdErxWebHx0JRh3t2TiWVojVV_sVLSaCUXRvjA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day26-survey-results" aria-expanded="false" aria-controls="day26-survey-results">Results</a>)
@@ -343,8 +343,9 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 27 (Wednesday, March 31)
+### Day 27: How to implement an observer (Wednesday, March 31)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_8gszecaz/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day27_platform_observer)
 * Supplementary videos on the details of observer design and analysis:
