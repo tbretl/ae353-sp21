@@ -346,7 +346,7 @@ description: What we will do from day to day
 ### Day 27: How to implement an observer (Wednesday, March 31)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_8gszecaz/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day27-survey-results" aria-expanded="false" aria-controls="day27-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day27_platform_observer)
 * Supplementary videos on the details of observer design and analysis:
   - [Observers, Part 1: What is an observer?](https://mediaspace.illinois.edu/media/t/1_bwsv03zv/)
@@ -355,3 +355,13 @@ description: What we will do from day to day
   - [Observers, Part 4: How to choose L for an observer?](https://mediaspace.illinois.edu/media/t/1_6kd1vo4k/)
   - [Observers, Part 5: Do observers break controllers?](https://mediaspace.illinois.edu/media/t/1_93pesfka/)
   - [Observers, Part 6: When is observer design possible?](https://mediaspace.illinois.edu/media/t/1_rxgahknr/)
+
+<div class="collapse" id="day27-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTf5h7U6ymA1tmAefaYWJr8lSjuxvvDgnYKG44cg2FT-rNdWaeYouWdp4qouXRXGmLnb_hhgr-sPFk/pubchart?oid=1204481877&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 28 (Friday, April 2)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link)
