@@ -366,3 +366,4 @@ description: What we will do from day to day
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day28_platform_observer)
+* [Notes (Before Class)](./notes/Day28-ObserverDesign.pdf)
