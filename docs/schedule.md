@@ -362,6 +362,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 28 (Friday, April 2)
+### Day 28: Observer design and analysis (Friday, April 2)
 
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day28_platform_observer)
