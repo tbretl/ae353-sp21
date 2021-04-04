@@ -364,6 +364,18 @@ description: What we will do from day to day
 
 ### Day 28: Observer design and analysis (Friday, April 2)
 
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day28-survey-results" aria-expanded="false" aria-controls="day28-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day28_platform_observer)
 * [Notes (Before Class)](./notes/Day28-ObserverDesign.pdf)
+
+<div class="collapse" id="day28-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTHDuEB-pcLpPJ0iR8MzKT5aJCGWMI4NZ48HK-8IqX9wLaYlnU7VfmhXHMFihTY4eFMSEdm-8pjjMnS/pubchart?oid=2000897737&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 11
+
+### Day 29 (Monday, April 5)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Lh3N8WMPhHPo66rpBlHAAb1iDBEpW5J0qLGwgt_6yjitGQ/viewform?usp=sf_link)
