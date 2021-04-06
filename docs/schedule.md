@@ -381,7 +381,17 @@ description: What we will do from day to day
 ### Day 29: More observer design and analysis - the full system, linearization, optimality (Monday, April 5)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_njl1hroj/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Lh3N8WMPhHPo66rpBlHAAb1iDBEpW5J0qLGwgt_6yjitGQ/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Lh3N8WMPhHPo66rpBlHAAb1iDBEpW5J0qLGwgt_6yjitGQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day29-survey-results" aria-expanded="false" aria-controls="day29-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day29_platform_observer)
 * [Notes (Before Class)](./notes/Day29-ObserverDesignPart2.pdf)
 * [Notes (After Class)](./notes/Day29-ObserverDesignPart2-InClass.pdf)
+
+<div class="collapse" id="day29-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRt__ANmcKTlYeDjy0s_c2izCsJYp0AeuYgrpLBTRqqk57ulriiBe8f0Dtk9oPovFM-w3VPyBX1Z5RA/pubchart?oid=1242320455&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 30 (Wednesday, April 7)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link)
