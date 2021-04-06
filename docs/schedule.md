@@ -380,6 +380,8 @@ description: What we will do from day to day
 
 ### Day 29: More observer design and analysis - the full system, linearization, optimality (Monday, April 5)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_njl1hroj/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Lh3N8WMPhHPo66rpBlHAAb1iDBEpW5J0qLGwgt_6yjitGQ/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day29_platform_observer)
 * [Notes (Before Class)](./notes/Day29-ObserverDesignPart2.pdf)
+* [Notes (After Class)](./notes/Day29-ObserverDesignPart2-InClass.pdf)
