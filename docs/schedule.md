@@ -397,3 +397,4 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_x6zw3b0p/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day30_spacecraft_sensors)
+* [Notes](./notes/Day30-NonlinearSensorModels.pdf)
