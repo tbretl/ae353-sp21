@@ -392,6 +392,8 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 30 (Wednesday, April 7)
+### Day 30: Nonlinear sensor model (Wednesday, April 7)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_x6zw3b0p/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day30_spacecraft_sensors)
