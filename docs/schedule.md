@@ -395,6 +395,16 @@ description: What we will do from day to day
 ### Day 30: Nonlinear sensor model (Wednesday, April 7)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_x6zw3b0p/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day30-survey-results" aria-expanded="false" aria-controls="day30-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day30_spacecraft_sensors)
 * [Notes](./notes/Day30-NonlinearSensorModels.pdf)
+
+<div class="collapse" id="day30-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTS-CwhIAlaH_KA5sicP9kE8_HQM_ulS2TZaWGqabXDTHLjivgQNOG-IMc1BsrY3EG6mdF_qOClh8q/pubchart?oid=151039306&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 31 (Friday, April 9)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScb0aUtjJ_bZ04R-p8nyl_L9thjETaqBjbtx33S2YsCFDDqmg/viewform?usp=sf_link)
