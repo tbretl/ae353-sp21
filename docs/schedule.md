@@ -407,8 +407,10 @@ description: What we will do from day to day
 
 ### Day 31: Optimal observer design (Friday, April 9)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_incinfl8/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScb0aUtjJ_bZ04R-p8nyl_L9thjETaqBjbtx33S2YsCFDDqmg/viewform?usp=sf_link)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day31_optimal_observers)
+* [Notes](./notes/Day31-OptimalObservers.pdf)
 * Supplementary videos on the details of optimal observer design:
   - [Optimal Observers, Part 1: What is an optimal observer?](https://mediaspace.illinois.edu/media/t/1_m5ku4a2i/)
   - [Optimal Observers, Part 2: What problem is solved to produce an optimal observer?](https://mediaspace.illinois.edu/media/t/1_cvfqo0i0/)
