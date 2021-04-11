@@ -89,7 +89,7 @@ Then, consider at least one of the following questions:
 
 You are also welcome to consider a similar question that you come up with on your own (e.g., see the list of suggested questions for the other design projects).
 
-### Your deliverables (by Wednesday, April 14)
+### Your deliverables (by ~~Wednesday, April 14~~ Friday, April 16)
 
 #### Video
 
@@ -202,7 +202,7 @@ To improve your portfolio, you are welcome (but not required) to resubmit your v
 
 ### Frequently asked questions
 
-#### Must I submit drafts prior to the April 14 deadline?
+#### Must I submit drafts prior to the ~~April 14~~ April 16 deadline?
 
 No. You are welcome to submit the final version of your project early, though! You are also welcome to revise and resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (see [Evaluation](#evaluation)).
 
