@@ -424,6 +424,8 @@ description: What we will do from day to day
 
 ## Week 12
 
-### Day 32 (Monday, April 12)
+### Day 32: Optimal observer implementation, aggregate data collection and analysis (Monday, April 12)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_xln10jb2/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Z4BeHGIZ3URcl5S_zarezqhVe8cJv38KMUflGYt4kfuwnw/viewform?usp=sf_link)
+* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day32_optimal_observers)
