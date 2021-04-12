@@ -408,10 +408,22 @@ description: What we will do from day to day
 ### Day 31: Optimal observer design (Friday, April 9)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_incinfl8/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScb0aUtjJ_bZ04R-p8nyl_L9thjETaqBjbtx33S2YsCFDDqmg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScb0aUtjJ_bZ04R-p8nyl_L9thjETaqBjbtx33S2YsCFDDqmg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day31-survey-results" aria-expanded="false" aria-controls="day31-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day31_optimal_observers)
 * [Notes](./notes/Day31-OptimalObservers.pdf)
 * Supplementary videos on the details of optimal observer design:
   - [Optimal Observers, Part 1: What is an optimal observer?](https://mediaspace.illinois.edu/media/t/1_m5ku4a2i/)
   - [Optimal Observers, Part 2: What problem is solved to produce an optimal observer?](https://mediaspace.illinois.edu/media/t/1_cvfqo0i0/)
   - [Optimal Observers, Part 3: Do optimal observers make any sense at all?](https://mediaspace.illinois.edu/media/t/1_axx6h2yg/)
+
+<div class="collapse" id="day31-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSizndbH5u8c38_9vXmEHxkGhT0jDbf8nSrVN66g2XmqswTU8i2kqCMwwUKxxwdFKkTRwewmx47LKzZ/pubchart?oid=556613842&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 12
+
+### Day 32 (Monday, April 12)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Z4BeHGIZ3URcl5S_zarezqhVe8cJv38KMUflGYt4kfuwnw/viewform?usp=sf_link)
