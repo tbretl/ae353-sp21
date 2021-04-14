@@ -436,6 +436,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 33 (Wednesday, April 14)
+### Day 33: Project Q+A, introduction to trajectory tracking (Wednesday, April 14)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_mz796hyq/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeZuQOlvDq2aLmJYCPerErS_pSr-nMVtDA41fB6_9nILR-AtA/viewform?usp=sf_link)
