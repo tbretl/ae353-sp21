@@ -427,5 +427,15 @@ description: What we will do from day to day
 ### Day 32: Optimal observer implementation, aggregate data collection and analysis (Monday, April 12)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_xln10jb2/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Z4BeHGIZ3URcl5S_zarezqhVe8cJv38KMUflGYt4kfuwnw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Z4BeHGIZ3URcl5S_zarezqhVe8cJv38KMUflGYt4kfuwnw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day32-survey-results" aria-expanded="false" aria-controls="day32-survey-results">Results</a>)
 * [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day32_optimal_observers)
+
+<div class="collapse" id="day32-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQoHgk81gmHo1UOCTCmXO39fzzxdenkQ7_S94xhEehQWozqLuqM9LARrj5WwCPxTGrqzehZleFnqRfE/pubchart?oid=387987479&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 33 (Wednesday, April 14)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeZuQOlvDq2aLmJYCPerErS_pSr-nMVtDA41fB6_9nILR-AtA/viewform?usp=sf_link)
