@@ -447,6 +447,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 34 (Friday, April 16)
+### Day 34: Preview of fourth design project (Friday, April 16)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_ydaku88y/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScHlesFWsNqZeuTpVBKLc0R_WKB66zwcGwbEIglQa42cOCDVw/viewform?usp=sf_link)
