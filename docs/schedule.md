@@ -450,4 +450,16 @@ description: What we will do from day to day
 ### Day 34: Preview of fourth design project (Friday, April 16)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_ydaku88y/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScHlesFWsNqZeuTpVBKLc0R_WKB66zwcGwbEIglQa42cOCDVw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScHlesFWsNqZeuTpVBKLc0R_WKB66zwcGwbEIglQa42cOCDVw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day34-survey-results" aria-expanded="false" aria-controls="day34-survey-results">Results</a>)
+
+<div class="collapse" id="day34-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQdE1iAFzqRzHWyA422oq_b3LDeMeB4eEfZerHaxNp3bLdlgOJ5gPw-0NtzoPQUewCLbEII79RKzdPA/pubchart?oid=1488171631&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 13
+
+### Day 35 (Monday, April 19)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLScDO_qmLjgg1P9Sd645_NgA_u2EMb2WTiEftyCbP8LEnYQCTA/viewform?usp=sf_link)
