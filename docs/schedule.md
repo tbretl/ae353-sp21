@@ -460,6 +460,7 @@ description: What we will do from day to day
 
 ## Week 13
 
-### Day 35 (Monday, April 19)
+### Day 35: More about fourth design project (Monday, April 19)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_4199x86j/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScDO_qmLjgg1P9Sd645_NgA_u2EMb2WTiEftyCbP8LEnYQCTA/viewform?usp=sf_link)
