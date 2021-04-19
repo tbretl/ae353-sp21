@@ -13,6 +13,185 @@ description: How to get started on your design projects
 
 ---
 
+## Design Project \#4 (Drone)
+
+### The system
+
+The fourth project that you will complete this semester is to design, implement, and test a controller that enables a quadrotor - aka "the drone" - to race through rings from start to finish without crashing:
+
+![Image of drone](./images/drone.png)
+
+The motion of the system is governed by ordinary differential equations with the following form:
+
+$$\begin{bmatrix} \dot{p}_x \\ \dot{p}_y \\ \dot{p}_z \\ \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \\ \dot{v}_x \\ \dot{v}_y \\ \dot{v}_z \\ \dot{w}_x \\ \dot{w}_y \\ \dot{w}_z \end{bmatrix} = f\left(p_x, p_y, p_z, \phi, \theta, \psi, v_x, v_y, v_z, w_x, w_y, w_z, \tau_x, \tau_y, \tau_z, f_z \right)$$
+
+In these equations:
+
+* $p_x$ is the **$x$ position** (m)
+* $p_y$ is the **$y$ position** (m)
+* $p_z$ is the **$z$ position** (m)
+* $\phi$ is the **roll angle** (rad)
+* $\theta$ is the **pitch angle** (rad)
+* $\psi$ is the **yaw angle** (rad)
+* $v_x$ is the **linear velocity along the $x$ axis** (m/s)
+* $v_y$ is the **linear velocity along the $y$ axis** (m/s)
+* $v_z$ is the **linear velocity along the $z$ axis** (m/s)
+* $w_x$ is the **angular velocity about the body-fixed $x$ axis** (rad/s), which points forward
+* $w_y$ is the **angular velocity about the body-fixed $y$ axis** (rad/s), which points left
+* $w_z$ is the **angular velocity about the body-fixed $z$ axis** (rad/s), which points up
+* $\tau_x$ is the **net torque about the body-fixed $x$ axis** ($N\cdot\text{m}$)
+* $\tau_y$ is the **net torque about the body-fixed $y$ axis** ($N\cdot\text{m}$)
+* $\tau_z$ is the **net torque about the body-fixed $z$ axis** ($N\cdot\text{m}$)
+* $f_z$ is the **net force along the body-fixed $z$ axis** ($N$)
+
+A [symbolic description of these equations of motion]({{ site.github.repository_url }}/tree/main/projects/04_drone/DeriveEOM.ipynb) is provided with the [project code]({{ site.github.repository_url }}/tree/main/projects/04_drone).
+
+The sensor is a motion capture system. It measures the position ($p_x, p_y, p_z$) and orientation ($\phi, \theta, \psi$) of the drone.
+
+The code provided [here]({{ site.github.repository_url }}/tree/main/projects/04_drone) simulates the motion of this system ([DroneDemo]({{ site.github.repository_url }}/tree/main/projects/04_drone/DroneDemo.ipynb)) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/04_drone/DeriveEOM.ipynb)).
+
+The goal is to race as fast as possible from the start ring to the goal ring, passing through all the rings in between.
+
+
+### Your tasks
+
+TBD
+
+#### Things you need to do
+
+TBD
+
+### Your deliverables (by Tuesday, May 4)
+
+#### Video
+
+This video will satisfy the following requirements:
+
+* It must show your working control system.
+* It must include some description (e.g., as text or voice) of what is being shown.
+* It must stay professional (use good sense, please).
+
+It is best if this video is created by direct screen-capture rather than, for example, by taking a video of the screen with a cell phone.
+
+It is best if this video is about 60 seconds in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep viewers' attention with anything longer.
+
+Submit your video by uploading it to the [AE353 (Spring 2021) Project Videos](https://mediaspace.illinois.edu/channel/channelid/201808523) channel on Illinois Media Space. Please take care to do the following:
+
+* Use a descriptive title that includes your name in parentheses --- for example, "Control of a differential drive robot (Tim Bretl)".
+* Add the tag `DP4` (an **upper case** "DP" followed by the number "4"), so viewers can filter by project number.
+
+You are welcome to resubmit your video at any time. To do so, please "Edit" your **existing** video and then do "Replace Media". Please do **not** create a whole new submission.
+
+#### Code
+
+This code will satisfy the following requirements:
+
+* It must be in a folder called `04_code` (all numbers and **lower case**).
+* It must include a single notebook called `GenerateResults.ipynb` that could be used by any of your peers to reproduce *all* of the results that you show in your video and your report.
+* It must include all the other files (with the right directory structure) that are necessary for `GenerateResults.ipynb` to function.
+* It must not rely on any dependencies other than those associated with the conda environment described by `ae353-bullet.yml`.
+
+Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your third design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   03_report.pdf
+└───03_code
+│   04_report.pdf
+└───04_code
+│   │   GenerateResults.ipynb
+│   │   ae353-drone.py
+│   └───urdf
+│       │   big-ring.stl
+│       │   big-ring.urdf
+│       │   checker_blue.png
+│       │   drone.stl
+│       │   drone.urdf
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+│       │   ring.stl
+│       │   ring.urdf
+│       │   screen.obj
+|       ...
+```
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `02_code_old` or anything like that.
+
+#### Report
+
+This report will satisfy the following requirements:
+
+* It must be a single PDF document that is called `04_report.pdf` and that conforms to the guidelines for [Preparation of Papers for AIAA Technical Conferences](https://www.aiaa.org/events-learning/events/Technical-Presenter-Resources). In particular, you must use either the [Word](https://www.aiaa.org/docs/default-source/uploadedfiles/aiaa-forums-shared-universal-content/preparation-of-papers-for-technical-conferences.docx?sfvrsn=e9a97512_10) or [LaTeX](https://www.overleaf.com/latex/templates/latex-template-for-the-preparation-of-papers-for-aiaa-technical-conferences/rsssbwthkptn#.WbgUXMiGNPZ) manuscript template.
+* It must have a descriptive title, an author, an abstract, and a list of nomenclature.
+* It must say how you addressed all of the required tasks (see above).
+* It must **tell a story** that shows you have found and explored something that interests you.
+* It must **acknowledge and cite** any sources, including the reports of your colleagues.
+
+Our review of your technical approach will place special emphasis on *TBD.* Our review of your report will place special emphasis on your *TBD*.
+
+You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
+
+It is best if this report is about 5 pages in length --- it will be hard to show off your work with anything shorter, and it will be hard to keep readers' attention with anything longer.
+
+Submit your report by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
+
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your fourth design project, your sub-folder should look like this:
+
+```
+yournetid
+│   01_report.pdf
+└───01_code
+│   02_report.pdf
+└───02_code
+│   03_report.pdf
+└───03_code
+│   04_report.pdf
+└───04_code
+│   │   GenerateResults.ipynb
+│   │   ae353-drone.py
+│   └───urdf
+│       │   big-ring.stl
+│       │   big-ring.urdf
+│       │   checker_blue.png
+│       │   drone.stl
+│       │   drone.urdf
+│       │   plane.mtl
+│       │   plane.obj
+│       │   plane.urdf
+│       │   ring.stl
+│       │   ring.urdf
+│       │   screen.obj
+|       ...
+```
+
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `03_report_old.pdf` or anything like that.
+
+#### Contest
+
+TBD
+
+### Evaluation
+
+We will look at your submissions as they are received. Early submissions are strongly encouraged. We will provide written feedback but will provide only one of three possible grades:
+
+* Not satisfactory for B
+* Satisfactory for B
+* Better than B
+
+We will only distinguish between grades higher than B when we look at your entire portfolio of project work at the end of the semester.
+
+To improve your portfolio, you are welcome (but not required) to resubmit your video, code, and/or report after receiving our written feedback anytime before the last day of class (May 5, 2021).
+
+
+
+
 ## Design Project \#3 (Spacecraft with star tracker)
 
 ### The system
