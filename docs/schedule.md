@@ -23,13 +23,13 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_ljjd2109/)
 * [Survey](https://forms.gle/t2t6UiE2CD52uY5U6) to fill out by noon on Thursday, January 28
-* [Example code (reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day02_wheel)
+* [Example code (reaction wheel)]({{ site.github.repository_url }}/tree/main/examples/day02_wheel)
 
 ### Day 03 (Friday, January 29)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_5v9lh7ex/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScgviwethSHLY-vwlXShup-ZOQdwHvkS6Ja3LE1zNqCec0tUQ/viewform?usp=sf_link) to fill out by noon on Saturday, January 29
-* [Example code (platform with reaction wheel)](https://github.com/tbretl/ae353-sp21/tree/main/examples/day03_platform)
+* [Example code (platform with reaction wheel)]({{ site.github.repository_url }}/tree/main/examples/day03_platform)
 
 ## Week 2
 
@@ -108,7 +108,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_90ghqyz9/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfBerRthhQzixcO5tPznkSz8i8pqI_BkssU2RE14niRaNthrg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day12-survey-results" aria-expanded="false" aria-controls="day12-survey-results">Results</a>)
 * [PrairieLearn HW6](https://www.prairielearn.org/pl/course_instance/128571/assessments)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day12_platform) - there are two notebooks here, one [before class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo.ipynb) and one [after class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo-InClass.ipynb)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day12_platform) - there are two notebooks here, one [before class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo.ipynb) and one [after class](https://github.com/tbretl/ae353-sp21/blob/main/examples/day12_platform/PlatformDemo-InClass.ipynb)
 
 <div class="collapse" id="day12-survey-results">
   <div class="card card-body">
@@ -120,7 +120,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_8ilzpcnc/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfnXKbIok1dz6poh0MhR-n0g6McsBS3KgH-cLp5zsaTLpszIg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day13-survey-results" aria-expanded="false" aria-controls="day13-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb) for how to implement PD control
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day13_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day13_cmg/CMGDemo-InClass.ipynb) for how to implement PD control
 
 <div class="collapse" id="day13-survey-results">
   <div class="card card-body">
@@ -132,7 +132,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_4408udcb/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdY2CukZRpcu6oRL_5AC9T7iiK_UhXFWntrjqrsGMMkf9cCsA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day14-survey-results" aria-expanded="false" aria-controls="day14-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day14_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day14_cmg/CMGDemo-InClass.ipynb) for:
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day14_cmg) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day14_cmg/CMGDemo-InClass.ipynb) for:
   - how to implement linear state feedback
   - how to choose (or randomize) non-zero initial conditions
   - how to take a snapshot of the simulation
@@ -182,7 +182,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnt46jl3/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSde-VVpg-nbl3O23iFCueGW7oC23jvHFhLdHsTgvUPpskc5nQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day15-survey-results" aria-expanded="false" aria-controls="day15-survey-results">Results</a>)
 * [Notes (After Class)](./notes/Day15-EigenvaluePlacement-InClass.pdf)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day15_platform) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day15_platform/PlatformDemo-InClass.ipynb) for an example of how to do eigenvalue placement with [scipy.signal.place_poles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.place_poles.html)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day15_platform) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day15_platform/PlatformDemo-InClass.ipynb) for an example of how to do eigenvalue placement with [scipy.signal.place_poles](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.place_poles.html)
 * [PrairieLearn HW7](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 
 <div class="collapse" id="day15-survey-results">
@@ -196,7 +196,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_hw6im1lh/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfKpKDbcBuGFryTBTW-sYjBH5V7wBmqa3Rk2t3ZSRaflrgDBw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day16-survey-results" aria-expanded="false" aria-controls="day16-survey-results">Results</a>)
 * [Design Project \#2 (Differential-drive robot)](projects#design-project-2-differential-drive-robot)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for a PD controller that keeps the robot upright
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day16_segbot) - in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/blob/main/examples/day16_segbot/SegbotDemo-InClass.ipynb) for a PD controller that keeps the robot upright
 
 <div class="collapse" id="day16-survey-results">
   <div class="card card-body">
@@ -210,7 +210,7 @@ description: What we will do from day to day
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScILM7dwAbDbljh7sGUIvc5jJeCLDpmitX4lEzYo1nAEXPkvA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day17-survey-results" aria-expanded="false" aria-controls="day17-survey-results">Results</a>)
 * [Notes (Before Class)](./notes/Day17-Acker.pdf)
 * [Notes (After Class)](./notes/Day17-Acker-InClass.pdf)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day17_ccf/CCF-demos.ipynb)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day17_ccf/CCF-demos.ipynb)
 * Supplementary videos on the details of Ackermann's method:
   - [Ackermann's Method, Part 1: Eigenvalues are invariant to coordinate transformation](https://mediaspace.illinois.edu/media/t/1_93vewoav/)
   - [Ackermann's Method, Part 2: Controllable canonical form](https://mediaspace.illinois.edu/media/t/1_rbf0x31w/)
@@ -244,7 +244,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_hnn8rvm2/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSemeHLQnWaiDCpE3CthZqkkeKaRAkVBLO-Jwzdh8IFtXIw1KA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day19-survey-results" aria-expanded="false" aria-controls="day19-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/) — in particular, see [this notebook](https://github.com/tbretl/ae353-sp21/tree/main/examples/day19_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day19_controllability/) — in particular, see [this notebook]({{ site.github.repository_url }}/tree/main/examples/day19_controllability/ExamplesOfControllability.ipynb) for many examples of how to check if a system is controllable
 
 <div class="collapse" id="day19-survey-results">
   <div class="card card-body">
@@ -271,7 +271,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_gk0vqpgw/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfmkIEg8khvf6DrF-arOlqBN5zt5lK8pPxp2qjC6SF6wQCi-g/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day21-survey-results" aria-expanded="false" aria-controls="day21-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day21_lqr_cost/)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day21_lqr_cost/)
 * [PrairieLearn HW10](https://www.prairielearn.org/pl/course_instance/128571/assessments)
 
 <div class="collapse" id="day21-survey-results">
@@ -284,7 +284,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_vjy0xwiy/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfsXOl_Zy6qbGMZLoIp99PKZxCbPX_0n67F13R9nWPR-jRCGQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day22-survey-results" aria-expanded="false" aria-controls="day22-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day22_lqr_ics_and_weights/)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day22_lqr_ics_and_weights/)
 
 <div class="collapse" id="day22-survey-results">
   <div class="card card-body">
@@ -321,7 +321,7 @@ description: What we will do from day to day
 * [Video](https://mediaspace.illinois.edu/media/t/1_ch4za3ak/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc3w3ilZeYIZgo_wxje2mrA0W4gUhn5jpv7qS0g9UAk4PZF4A/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day25-survey-results" aria-expanded="false" aria-controls="day25-survey-results">Results</a>)
 * [Design Project \#3 (Spacecraft with star tracker)](projects#design-project-3-spacecraft-with-star-tracker)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day25_spacecraft) - playing around with the third design project
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day25_spacecraft) - playing around with the third design project
 
 <div class="collapse" id="day25-survey-results">
   <div class="card card-body">
@@ -347,7 +347,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_8gszecaz/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSkJu3qCW4mH2O56AvZpZWmYmTVk4hTqctUNkipoAPhJJP8w/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day27-survey-results" aria-expanded="false" aria-controls="day27-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day27_platform_observer)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day27_platform_observer)
 * Supplementary videos on the details of observer design and analysis:
   - [Observers, Part 1: What is an observer?](https://mediaspace.illinois.edu/media/t/1_bwsv03zv/)
   - [Observers, Part 2: Do observers make sense?](https://mediaspace.illinois.edu/media/t/1_xf9cytda/)
@@ -366,7 +366,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_kkmbsupf/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfQOHr0APdmkWMlO6QQYocLfDmJIRj-1Qd__kYcdx8MPt3OUw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day28-survey-results" aria-expanded="false" aria-controls="day28-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day28_platform_observer)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day28_platform_observer)
 * [Notes (Before Class)](./notes/Day28-ObserverDesign.pdf)
 * [Notes (After Class)](./notes/Day28-ObserverDesign-InClass.pdf)
 
@@ -382,7 +382,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_njl1hroj/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSc7Lh3N8WMPhHPo66rpBlHAAb1iDBEpW5J0qLGwgt_6yjitGQ/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day29-survey-results" aria-expanded="false" aria-controls="day29-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day29_platform_observer)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day29_platform_observer)
 * [Notes (Before Class)](./notes/Day29-ObserverDesignPart2.pdf)
 * [Notes (After Class)](./notes/Day29-ObserverDesignPart2-InClass.pdf)
 
@@ -396,7 +396,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_x6zw3b0p/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdSYWcYaa5xf3I9l_pnyI9cgnDwuJTGAqHq11Zr3sxSNYLO5Q/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day30-survey-results" aria-expanded="false" aria-controls="day30-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day30_spacecraft_sensors)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day30_spacecraft_sensors)
 * [Notes](./notes/Day30-NonlinearSensorModels.pdf)
 
 <div class="collapse" id="day30-survey-results">
@@ -409,7 +409,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_incinfl8/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLScb0aUtjJ_bZ04R-p8nyl_L9thjETaqBjbtx33S2YsCFDDqmg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day31-survey-results" aria-expanded="false" aria-controls="day31-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day31_optimal_observers)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day31_optimal_observers)
 * [Notes](./notes/Day31-OptimalObservers.pdf)
 * Supplementary videos on the details of optimal observer design:
   - [Optimal Observers, Part 1: What is an optimal observer?](https://mediaspace.illinois.edu/media/t/1_m5ku4a2i/)
@@ -428,7 +428,7 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_xln10jb2/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSe-Z4BeHGIZ3URcl5S_zarezqhVe8cJv38KMUflGYt4kfuwnw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day32-survey-results" aria-expanded="false" aria-controls="day32-survey-results">Results</a>)
-* [Example code](https://github.com/tbretl/ae353-sp21/tree/main/examples/day32_optimal_observers)
+* [Example code]({{ site.github.repository_url }}/tree/main/examples/day32_optimal_observers)
 
 <div class="collapse" id="day32-survey-results">
   <div class="card card-body">
@@ -471,6 +471,9 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 36 (Wednesday, April 21)
+### Day 36: Tracking (Wednesday, April 21)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_b7yh76i1/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeCmD9SJ5ff9OxFIFoWoyCNI_vci7XQ3FFzql2gYY6UPli4Qg/viewform?usp=sf_link)
+* [Example code: tracking with full state feedback]({{ site.github.repository_url }}/tree/main/examples/day36_tracking/platform_full_state)
+* [Example code: tracking with partial state feedback]({{ site.github.repository_url }}/tree/main/examples/day36_tracking/platform_partial_state)
