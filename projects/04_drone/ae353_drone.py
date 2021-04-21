@@ -600,14 +600,7 @@ class Simulator:
         # Note: you *must* specify a projectionMatrix when calling getCameraImage,
         # or you will get whatever view is currently shown in the GUI.
 
-        # if self.camera_drone_name is not None:
-        #     drone = self.get_drone_by_name(self.camera_drone_name)
-        #     if drone is None:
-        #         raise Exception(f'drone "{drone_name}" does not exist')
-        #     pos, ori = pybullet.getBasePositionAndOrientation(drone['id'])
-        #     eul = pybullet.getEulerFromQuaternion(ori)
-        #     pybullet.resetDebugVisualizerCamera(3., (eul[2] * 180 / np.pi) + self.camera_drone_yaw, -15, pos)
-
+        # World view
         if self.camera_viewfromstart:
             p_eye = np.array([-3.5, 0., 2.])
             p_target = np.array(self.rings[0]['p'])
@@ -620,6 +613,7 @@ class Simulator:
         im = pybullet.getCameraImage(480, 480, viewMatrix=view_matrix, projectionMatrix=projection_matrix, renderer=pybullet.ER_BULLET_HARDWARE_OPENGL, shadow=1)
         rgba_world = im[2]
 
+        # Body view (picture-in-picture)
         if self.camera_drone_name is not None:
             drone = self.get_drone_by_name(self.camera_drone_name)
             if drone is None:
@@ -634,9 +628,7 @@ class Simulator:
             projection_matrix = pybullet.computeProjectionMatrixFOV(fov=60.0, aspect=1.0, nearVal=0.01, farVal=100.0)
             im = pybullet.getCameraImage(128, 128, viewMatrix=view_matrix, projectionMatrix=projection_matrix, renderer=pybullet.ER_BULLET_HARDWARE_OPENGL, shadow=0)
             rgba_body = im[2]
-            # put body view inside world view (picture-in-picture)
             rgba_world[10:138, 10:138, :] = rgba_body
-
 
         return rgba_world
 
