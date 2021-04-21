@@ -21,7 +21,9 @@ The fourth project that you will complete this semester is to design, implement,
 
 ![Image of drone](./images/drone.png)
 
-The motion of the system is governed by ordinary differential equations with the following form:
+In particular, your drone will be racing with other drones. You will need to take care not to run into these other drones, as collisions may cause drones to crash.
+
+The motion of each drone is governed by ordinary differential equations with the following form:
 
 $$\begin{bmatrix} \dot{p}_x \\ \dot{p}_y \\ \dot{p}_z \\ \dot{\phi} \\ \dot{\theta} \\ \dot{\psi} \\ \dot{v}_x \\ \dot{v}_y \\ \dot{v}_z \\ \dot{w}_x \\ \dot{w}_y \\ \dot{w}_z \end{bmatrix} = f\left(p_x, p_y, p_z, \phi, \theta, \psi, v_x, v_y, v_z, w_x, w_y, w_z, \tau_x, \tau_y, \tau_z, f_z \right)$$
 
@@ -46,7 +48,12 @@ In these equations:
 
 A [symbolic description of these equations of motion]({{ site.github.repository_url }}/tree/main/projects/04_drone/DeriveEOM.ipynb) is provided with the [project code]({{ site.github.repository_url }}/tree/main/projects/04_drone).
 
-The sensor is a motion capture system. It measures the position ($p_x, p_y, p_z$) and orientation ($\phi, \theta, \psi$) of the drone.
+The sensor is a motion capture system. It provides a noisy measurement of the following things:
+
+* the position of the drone ($p_x, p_y, p_z$)
+* the orientation of the drone ($\phi, \theta, \psi$)
+* the position of the center of the next ring that the drone needs to pass through (as well as an indication of whether or not this is the last ring, a.k.a. the "finish")
+* the position of all other drones
 
 The code provided [here]({{ site.github.repository_url }}/tree/main/projects/04_drone) simulates the motion of this system ([DroneDemo]({{ site.github.repository_url }}/tree/main/projects/04_drone/DroneDemo.ipynb)) and also derives the equations of motion in symbolic form ([DeriveEOM]({{ site.github.repository_url }}/tree/main/projects/04_drone/DeriveEOM.ipynb)).
 
@@ -55,11 +62,38 @@ The goal is to race as fast as possible from the start ring to the goal ring, pa
 
 ### Your tasks
 
-TBD
+The focus of your analysis this time will be on identifying, diagnosing, and eliminating failures. In this context, a "failure" is anything that causes your drone not to reach the finish ring. There are many reasons why a particular control design might lead to failure. Your job as a control engineer is to uncover and address these sources of failure. At minimum, you should do the following three things for each control design that you consider:
+
+* **Identify** as many failures as possible.
+
+* **Diagnose** each failure, saying why you think it happened and providing evidence to support your claim.
+
+* **Eliminate** each failure (if possible) by making some change to your control design.
+
+Note that, sometimes, it is impossible to eliminate a failure. If you believe that this is the case, then provide evidence, and also carefully explain the conditions under which the failure can be avoided.
+
+Remember that you have practice in doing rigorous data collection, analysis, and visualization (the focus of the [third design project](#design-project-3-spacecraft-with-star-tracker)). This can help a lot in identifying and diagnosing failure modes.
 
 #### Things you need to do
 
-TBD
+Do the following things to produce a control design:
+
+* Linearize the equations of motion and a sensor model.
+* Show that the linearized system is both controllable and observable.
+* Design a stable controller and a stable observer.
+* Add trajectory tracking to enable movement between rings.
+* Implement the controller and observer (with trajectory tracking) and test them in simulation.
+
+Do the following thing to crash-test your control design:
+
+* Identify, diagnose, and eliminate as many sources of failure as you can find.
+
+Remember that doing the following two things may be helpful in your analysis of failures:
+
+* Define requirements and verifications. These are a great way to be precise about the conditions under which you expect your control design to work (i.e., *not* to fail) and about the way in which you will quantify and test whether or not it actually does.
+* Look at aggregate results. These are a great way to detect failures, to identify their source, and to provide evidence that failures have been eliminated.
+
+Once you have a working control design with well-understood failure modes, turn your attention to the [race](#contest). Can you think of a way to avoid collision with other drones? As usual, you are welcome to consider additional questions that you come up with on your own (e.g., see the list of suggested questions for the other design projects).
 
 ### Your deliverables (by Tuesday, May 4)
 
@@ -93,7 +127,7 @@ This code will satisfy the following requirements:
 
 Submit your code by uploading it to Box in the [AE353 (Spring 2021) Project Submissions](https://uofi.box.com/s/56ieq301xo6dp334j2hbsr2ypvqebjku) folder.
 
-In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your third design project, your sub-folder should look like this:
+In particular, you will find a sub-folder there with your NetID as the title. For instance, I would look for a sub-folder with the title `tbretl`. You have been made an "Editor" of your own sub-folder and so can upload, download, edit, and delete files inside this sub-folder. **Please keep your sub-folder clean and organized!** After submission of your fourth design project, your sub-folder should look like this:
 
 ```
 yournetid
@@ -122,7 +156,9 @@ yournetid
 |       ...
 ```
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `02_code_old` or anything like that.
+As usual, `04_code` may contain anything else that is necessary to generate your results and test your code. For example, it might contain a `students` folder with various control designs you considered along the way.
+
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `04_code_old` or anything like that.
 
 #### Report
 
@@ -171,11 +207,30 @@ yournetid
 |       ...
 ```
 
-You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `03_report_old.pdf` or anything like that.
+You are welcome to resubmit your report at any time. To do so, please **replace** your existing report. Please do not create new reports or move old ones to `04_report_old.pdf` or anything like that.
 
 #### Contest
 
-TBD
+There will be an opportunity to race with your friends in a friendly contest on the last day of class (Wednesday, May 5). The [same project code]({{ site.github.repository_url }}/tree/main/projects/04_drone) that you are using for the purpose of control design and simulation will be used to run each race in this contest.
+
+In particular, there will be two types of races:
+
+**Competetive** races, in which you "win" as an individual if your drone reaches the finish ring before any other drone. To enter these races, upload your control design to [the "Competetive Designs" Box folder](https://uofi.box.com/s/wlowlj10xfnm85yvok3tdiuqxsaynynd) sometime before midnight on Tuesday, May 4. In particular, you must upload exactly two files:
+
+* `netid.py`, with a completely self-contained implementation of your control design, in the format specified by [04_drone/students/template.py]({{ site.github.repository_url }}/tree/main/projects/04_drone/students/template.py)
+* `netid.png`, with an image (keep it professional) that can be used to distinguish your drone from others
+
+You should of course replace `netid` with your own netid. Please use all lowercase.
+
+**Cooperative** races, in which you "win" as a *group* if *all* drones reach the finish ring (this is harder than it sounds when there are lots of drones!). To enter these races, upload your control design to [the "Cooperative Designs" Box folder](https://uofi.box.com/s/7wp40vo7hsnzef2ejoan4b0a6c35f8ft) sometime before midnight on Tuesday, May 4. In particular, you must upload exactly two files:
+
+* `netid.py`, with a completely self-contained implementation of your control design, in the format specified by [04_drone/students/template.py]({{ site.github.repository_url }}/tree/main/projects/04_drone/students/template.py)
+* `netid.png`, with an image (keep it professional) that can be used to distinguish your drone from others
+
+You should of course replace `netid` with your own netid. Please use all lowercase.
+
+**All students are required to enter both races!** This should provide a strong incentive for you to help each other out, particularly if you want to be successful in the cooperative races. Although you are required to enter, the results will have no impact at all on the assessment of your fourth design project. (The winners, though, will receive everlasting fame.) Have fun!
+
 
 ### Evaluation
 
@@ -323,7 +378,7 @@ yournetid
 |       ...
 ```
 
-You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `02_code_old` or anything like that.
+You are welcome to resubmit your code at any time. To do so, please **replace** your existing code. Please do not create new folders or move old ones to `03_code_old` or anything like that.
 
 #### Report
 
