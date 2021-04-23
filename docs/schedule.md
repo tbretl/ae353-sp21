@@ -474,6 +474,16 @@ description: What we will do from day to day
 ### Day 36: Tracking (Wednesday, April 21)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_b7yh76i1/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeCmD9SJ5ff9OxFIFoWoyCNI_vci7XQ3FFzql2gYY6UPli4Qg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSeCmD9SJ5ff9OxFIFoWoyCNI_vci7XQ3FFzql2gYY6UPli4Qg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day36-survey-results" aria-expanded="false" aria-controls="day36-survey-results">Results</a>)
 * [Example code: tracking with full state feedback]({{ site.github.repository_url }}/tree/main/examples/day36_tracking/platform_full_state)
 * [Example code: tracking with partial state feedback]({{ site.github.repository_url }}/tree/main/examples/day36_tracking/platform_partial_state)
+
+<div class="collapse" id="day36-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRp0CQdOgXSVnSf-lt6H-fEvOVXEbLLGKB7g8azzF1lx7Pz4xWGFgv3BoGBO9cMg88-LtHw0S6xGfQf/pubchart?oid=1597479227&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 37 (Friday, April 23)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHy1L2V9AViOqzDUeiSyqULq_WivSTvXB5z-33pfxot6J6DA/viewform?usp=sf_link)
