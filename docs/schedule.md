@@ -484,6 +484,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 37 (Friday, April 23)
+### Day 37: Implementation details of tracking (Friday, April 23)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_71g7f5hu/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHy1L2V9AViOqzDUeiSyqULq_WivSTvXB5z-33pfxot6J6DA/viewform?usp=sf_link)
