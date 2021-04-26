@@ -488,6 +488,8 @@ description: What we will do from day to day
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_71g7f5hu/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHy1L2V9AViOqzDUeiSyqULq_WivSTvXB5z-33pfxot6J6DA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day37-survey-results" aria-expanded="false" aria-controls="day37-survey-results">Results</a>)
+* [Example code: tracking with full state feedback]({{ site.github.repository_url }}/tree/main/examples/day37_tracking/platform_full_state)
+* [Example code: tracking with partial state feedback]({{ site.github.repository_url }}/tree/main/examples/day37_tracking/platform_partial_state)
 
 <div class="collapse" id="day37-survey-results">
   <div class="card card-body">
@@ -497,6 +499,8 @@ description: What we will do from day to day
 
 ## Week 14
 
-### Day 38 (Monday, April 26)
+### Day 38: Project - forces and torques, the limiter, PD control (Monday, April 26)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_rsg29vue/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfgbhrP8_ZsC1Vzd-7mahWghfpRcEITMrKSvoo4sD69v-4avg/viewform?usp=sf_link)
+* [Example code: pd control for drone]({{ site.github.repository_url }}/tree/main/examples/day38_drone)
