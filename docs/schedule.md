@@ -487,4 +487,16 @@ description: What we will do from day to day
 ### Day 37: Implementation details of tracking (Friday, April 23)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_71g7f5hu/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHy1L2V9AViOqzDUeiSyqULq_WivSTvXB5z-33pfxot6J6DA/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfHy1L2V9AViOqzDUeiSyqULq_WivSTvXB5z-33pfxot6J6DA/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day37-survey-results" aria-expanded="false" aria-controls="day37-survey-results">Results</a>)
+
+<div class="collapse" id="day37-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ89roNAkaEvnWhUr3KRmrqwmsYvgRM9dFhQ-AJfzhB3HohONVf0kKdL7eBYVAgorPZpRfAfH1_60BW/pubchart?oid=572793415&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 14
+
+### Day 38 (Monday, April 26)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfgbhrP8_ZsC1Vzd-7mahWghfpRcEITMrKSvoo4sD69v-4avg/viewform?usp=sf_link)
