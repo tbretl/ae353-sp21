@@ -502,5 +502,15 @@ description: What we will do from day to day
 ### Day 38: Project - forces and torques, the limiter, PD control (Monday, April 26)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_rsg29vue/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfgbhrP8_ZsC1Vzd-7mahWghfpRcEITMrKSvoo4sD69v-4avg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfgbhrP8_ZsC1Vzd-7mahWghfpRcEITMrKSvoo4sD69v-4avg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day38-survey-results" aria-expanded="false" aria-controls="day38-survey-results">Results</a>)
 * [Example code: pd control for drone]({{ site.github.repository_url }}/tree/main/examples/day38_drone)
+
+<div class="collapse" id="day38-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQpq2FdlSr-60_j5MKG02IYv2LDXZHpmeMMeVzxfAIJjNwxRL2RnHUbIDCHh9vyZ_zv_Fc3mFy727jw/pubchart?oid=1700598596&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 39 (Wednesday, April 28)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSecFMXRbTQ5YC-JJkblgZYF3oOj9A8_xwOH_DRdSXJ2RQ5Scg/viewform?usp=sf_link)
