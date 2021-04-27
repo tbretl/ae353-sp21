@@ -436,9 +436,9 @@ class Simulator:
 
     def run(self, max_time=None, video_filename=None, print_results=True):
         if print_results == True:
-            print_check = True
+            self.print_check = True
         if print_results == False:
-            print_check = False
+            self.print_check = False
         
         if max_time is None:
             self.max_time_steps = None
