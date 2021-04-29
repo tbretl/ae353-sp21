@@ -511,6 +511,8 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 39 (Wednesday, April 28)
+### Day 39: Project - complete example of control design and implementation (Wednesday, April 28)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_rmdohllm/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSecFMXRbTQ5YC-JJkblgZYF3oOj9A8_xwOH_DRdSXJ2RQ5Scg/viewform?usp=sf_link)
+* [Example code: controller, observer, tracking for drone height]({{ site.github.repository_url }}/tree/main/examples/day39_drone)
