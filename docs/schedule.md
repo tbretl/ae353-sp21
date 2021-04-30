@@ -523,6 +523,7 @@ description: What we will do from day to day
   </div>
 </div>
 
-### Day 40 (Friday, April 30)
+### Day 40: Project - compare states and state estimates, seed the random number generator (Friday, April 30)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_t1m0g2d8/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdI2tBLF6JMLmG11INtUbY4_3qCXnEf7RYW6o-SfWUPO3dKyw/viewform?usp=sf_link)
