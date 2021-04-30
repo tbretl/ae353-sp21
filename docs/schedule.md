@@ -514,5 +514,15 @@ description: What we will do from day to day
 ### Day 39: Project - complete example of control design and implementation (Wednesday, April 28)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_rmdohllm/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSecFMXRbTQ5YC-JJkblgZYF3oOj9A8_xwOH_DRdSXJ2RQ5Scg/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSecFMXRbTQ5YC-JJkblgZYF3oOj9A8_xwOH_DRdSXJ2RQ5Scg/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day39-survey-results" aria-expanded="false" aria-controls="day39-survey-results">Results</a>)
 * [Example code: controller, observer, tracking for drone height]({{ site.github.repository_url }}/tree/main/examples/day39_drone)
+
+<div class="collapse" id="day39-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRsPN0ubGj1voDX4ziPLu3KXuPgP-xovonc_fo7mxgpCxB6PoVqdu6c4VzQpX058h4VLfwIL0K288IV/pubchart?oid=2044263612&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+### Day 40 (Friday, April 30)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdI2tBLF6JMLmG11INtUbY4_3qCXnEf7RYW6o-SfWUPO3dKyw/viewform?usp=sf_link)
