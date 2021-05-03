@@ -536,6 +536,8 @@ description: What we will do from day to day
 
 ## Week 16
 
-### Day 41 (Monday, May 3)
+### Day 41: Q+A, what's next for you in control, DP4 user data, frequency response (Monday, May 3)
 
+* [Video](https://mediaspace.illinois.edu/media/t/1_si18qoc9/)
 * [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfbF4dwrHHZPiWSLCJnZNjhVbQUSOSDliynRj7xn7th9OLLGQ/viewform?usp=sf_link)
+* [Example code: user data and frequency response]({{ site.github.repository_url }}/tree/main/examples/day41_drone)
