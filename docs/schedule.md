@@ -526,4 +526,16 @@ description: What we will do from day to day
 ### Day 40: Project - compare states and state estimates, seed the random number generator (Friday, April 30)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_t1m0g2d8/)
-* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdI2tBLF6JMLmG11INtUbY4_3qCXnEf7RYW6o-SfWUPO3dKyw/viewform?usp=sf_link)
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSdI2tBLF6JMLmG11INtUbY4_3qCXnEf7RYW6o-SfWUPO3dKyw/viewform?usp=sf_link) (<a role="button" data-bs-toggle="collapse" href="#day40-survey-results" aria-expanded="false" aria-controls="day40-survey-results">Results</a>)
+
+<div class="collapse" id="day40-survey-results">
+  <div class="card card-body">
+    <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT0JYMm15zOQhnI36EB_5M3OMwvyDoSSCtIe2FhPLe5cwe4L86zjyIuJCoKypnVvMB4SWGeoJl_AFmg/pubchart?oid=101963485&amp;format=interactive"></iframe>
+  </div>
+</div>
+
+## Week 16
+
+### Day 41 (Monday, May 3)
+
+* [Survey](https://docs.google.com/forms/d/e/1FAIpQLSfbF4dwrHHZPiWSLCJnZNjhVbQUSOSDliynRj7xn7th9OLLGQ/viewform?usp=sf_link)
