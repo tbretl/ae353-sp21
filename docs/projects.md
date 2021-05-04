@@ -215,7 +215,7 @@ There will be an opportunity to race with your friends in a friendly contest on 
 
 In particular, there will be two types of races:
 
-**Competetive** races, in which you "win" as an individual if your drone reaches the finish ring before any other drone. To enter these races, upload your control design to [the "Competetive Designs" Box folder](https://uofi.box.com/s/wlowlj10xfnm85yvok3tdiuqxsaynynd) sometime before midnight on Tuesday, May 4. In particular, you must upload exactly two files:
+**Competitive** races, in which you "win" as an individual if your drone reaches the finish ring before any other drone. To enter these races, upload your control design to [the "Competitive Designs" Box folder](https://uofi.box.com/s/wlowlj10xfnm85yvok3tdiuqxsaynynd) sometime before midnight on Tuesday, May 4. In particular, you must upload exactly two files:
 
 * `netid.py`, with a completely self-contained implementation of your control design, in the format specified by [04_drone/students/template.py]({{ site.github.repository_url }}/tree/main/projects/04_drone/students/template.py)
 * `netid.png`, with an image (keep it professional) that can be used to distinguish your drone from others
