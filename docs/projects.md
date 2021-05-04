@@ -170,7 +170,7 @@ This report will satisfy the following requirements:
 * It must **tell a story** that shows you have found and explored something that interests you.
 * It must **acknowledge and cite** any sources, including the reports of your colleagues.
 
-Our review of your technical approach will place special emphasis on *TBD.* Our review of your report will place special emphasis on your *TBD*.
+Our review of your technical approach will place special emphasis on your [analysis of failures](#your-tasks).
 
 You may organize your report however you like, but a natural structure might be to have sections titled Introduction, Model, Design, Results, and Conclusion.
 
