@@ -547,3 +547,7 @@ description: What we will do from day to day
     <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQT0fS2LMJUJPWM0QOqzd1uvQ0NYHpEgWk_odiS1-Ypm7J6ktlpjZmKMvt0wVSS8FdaJQK6iw6dvnVk/pubchart?oid=168663422&amp;format=interactive"></iframe>
   </div>
 </div>
+
+### Day 42: Race (Wednesday, May 5)
+
+* [Video](https://mediaspace.illinois.edu/media/t/1_xnwext4f/)
