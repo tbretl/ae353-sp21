@@ -21,7 +21,10 @@ class Simulator:
 
         # Create random number generator
         self.rng = np.random.default_rng(seed)
-
+        
+        #initialize check for printing results
+        self.print_check = None
+        
         # Choose the time step
         self.dt = 0.01
 
@@ -426,12 +429,18 @@ class Simulator:
             drone['cur_ring'] += 1
         if drone['cur_ring'] == len(self.rings):
             drone['finish_time'] = self.t
-            print(f'FINISHED: drone "{drone["name"]}" at time {drone["finish_time"]:.2f}')
+            if self.print_check == True:          
+                print(f'FINISHED: drone "{drone["name"]}" at time {drone["finish_time"]:.2f}')
             return True
         else:
             return False
 
-    def run(self, max_time=None, video_filename=None):
+    def run(self, max_time=None, video_filename=None, print_results=True):
+        if print_results == True:
+            self.print_check = True
+        if print_results == False:
+            self.print_check = False
+        
         if max_time is None:
             self.max_time_steps = None
         else:
