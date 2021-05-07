@@ -704,3 +704,20 @@ class Simulator:
             return p
         else:
             return None
+
+    def dispose(self):
+        '''
+        This function will reset the PyBullet Simulation, setting it up to be reconnected to and then disconnects from the server.  This will close the simulation window.
+        The function is equipped with try/catch so that no errors will be thrown when a step has already been taken.  For example, if the user already closes the GUI window, it would throw an error without the catch statement.
+        '''
+        # Remove all objects from simulation
+        try:
+            pybullet.resetSimulation()
+        except pybullet.error:
+            pass
+
+        # Clean up connection if not already done
+        try:
+            pybullet.disconnect()
+        except pybullet.error:
+            pass 
