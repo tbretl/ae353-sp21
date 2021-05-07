@@ -551,3 +551,4 @@ description: What we will do from day to day
 ### Day 42: Race (Wednesday, May 5)
 
 * [Video](https://mediaspace.illinois.edu/media/t/1_xnwext4f/)
+* [Example code: race]({{ site.github.repository_url }}/tree/main/examples/day42_drone_contest)
